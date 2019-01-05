@@ -2,6 +2,6 @@ import { Observable } from "rxjs";
 import UserEntity from '../../../entities/UserEntity';
 
 export default interface UserProvider {
-    getUserByName(name: string): Observable<UserEntity>;
+    getUserBy(name: string, email?: string): Observable<UserEntity>;
     getUserById(id: string): Observable<UserEntity>;
 }

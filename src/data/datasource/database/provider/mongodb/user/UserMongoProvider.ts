@@ -14,10 +14,10 @@ export default class UserMongoProvider implements UserProvider {
     @inject(BusinessInjector.LOGGER.value)
     private logger: Logger;
     
-    public getUserByName(name: string): Observable<UserEntity> {
+    public getUserBy(name: string, email?: string): Observable<UserEntity> {
         return Observable.create(async (subscriber: Subscriber<UserEntity>) => {
             try {
-                const foundUser = await this.retrieveUserByName(name);
+                const foundUser = await this.retrieveUserBy(name, email);
                 subscriber.next(UserSchemaMapper.mapToEntity(foundUser));
                 subscriber.complete();                
             } catch (error) {
@@ -40,10 +40,10 @@ export default class UserMongoProvider implements UserProvider {
         });
     }
 
-    private retrieveUserByName(name: string): Promise<Mongoose.Document> {
+    private retrieveUserBy(name: string, email?: string): Promise<Mongoose.Document> {
         return UserSchema.findOne({ $or:
             [{ "name": name }, 
-            { "email": name }]}).exec();
+            { "email": email }]}).exec();
     }
 
     private retrieveUserById(id: string): Promise<Mongoose.Document> {

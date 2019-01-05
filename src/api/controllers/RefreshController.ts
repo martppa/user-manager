@@ -16,7 +16,7 @@ export default class LoginController extends Controller {
     public async refresh(@Body() body: any, @Res() res: any) {
         const logger = Injector.container.get<Logger>(BusinessInjector.LOGGER.value);
         const validator = Injector.container.get<Validator>(BusinessInjector.VALIDATOR.value);
-        const refreshTokenValidationModel = new RefreshTokenValidationModel(body.token);
+        const refreshTokenValidationModel = new RefreshTokenValidationModel(body.refreshToken);
 
         try {
             const errors = await validator.validate(refreshTokenValidationModel);
@@ -34,7 +34,7 @@ export default class LoginController extends Controller {
             }, 
             (loginError: Error) => res.send(this.createErrorResponse([loginError.message])),
             () => {}, 
-            RefreshTokenParams.forToken(body.token));
+            RefreshTokenParams.forRefreshToken(refreshTokenValidationModel.refreshToken));
         
         return res;
     }

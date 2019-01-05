@@ -6,8 +6,7 @@ import { BusinessInjector } from '../../../business/di/BusinessInjector';
 import UserPersister from './persister/UserPersister';
 
 @injectable()
-export default class UserDataBaseDataStore implements UserDataStore {
-    
+export default class UserDataBaseDataStore implements UserDataStore {    
     @inject(BusinessInjector.USER_PERSISTER.value)
     private userDataPersister: UserPersister;
 

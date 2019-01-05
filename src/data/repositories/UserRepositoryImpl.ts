@@ -20,8 +20,8 @@ export class UserRepositoryImpl implements UserRepository {
         return this.userDataStore.saveUser(username, email, password);
     }
 
-    public getUserByName(name: string): Observable<User> {
-        return this.userDataSource.getUserByName(name).pipe(map(user => UserEntityMapper.mapToModel(user)));
+    public getUserBy(name: string, email?: string): Observable<User> {
+        return this.userDataSource.getUserBy(name, email).pipe(map(user => UserEntityMapper.mapToModel(user)));
     }
 
     public getUserById(id: string): Observable<User> {

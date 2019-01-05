@@ -17,7 +17,7 @@ import ExpressServer from 'chk2common/dist/server/express/ExpressServer';
 import EurekaServiceRegister from 'chk2common/dist/registration/eureka/EurekaServiceRegister';
 import UserPersister from "../../data/datastore/database/persister/UserPersister";
 import UserDataStore from "../../data/datastore/UserDataStore";
-import UserMongoPersister from "../../data/datastore/database/persister/mongodb/user/UserMongoDataPersister";
+import UserMongoPersister from "../../data/datastore/database/persister/mongodb/user/UserMongoPersister";
 import UserDatabaseDataStore from "../../data/datastore/database/UserDataBaseDataStore";
 import UserProvider from "../../data/datasource/database/provider/UserProvider";
 import UserMongoProvider from '../../data/datasource/database/provider/mongodb/user/UserMongoProvider';
@@ -29,6 +29,16 @@ import JwtTokener from '../../data/security/jwt/JwtTokener';
 import Validator from '../../api/validator/Validator';
 import { ClassValidator } from '../../api/validator/classvalidator/ClassValidator';
 import { RefreshToken } from '../../business/interactors/RefreshToken';
+import SessionDataSource from '../../data/datasource/SessionDataSource';
+import SessionDatabaseDataSource from '../../data/datasource/database/SessionDatabaseDataSource';
+import SessionMongoProvider from '../../data/datasource/database/provider/mongodb/session/SessionMongoProvider';
+import SessionProvider from "../../data/datasource/database/provider/SessionProvider";
+import { SessionRepository } from '../../business/repositories/SessionRepository';
+import SessionRepositoryImpl from '../../data/repositories/SessionRepositoryImpl';
+import SessionDataStore from '../../data/datastore/SessionDataStore';
+import SessionDatabaseDataStore from '../../data/datastore/database/SessionDatabaseDataStore';
+import SessionMongoPersister from '../../data/datastore/database/persister/mongodb/session/SessionMongoPersister';
+import SessionPersister from "../../data/datastore/database/persister/SessionPersister";
 
 export class Injector extends BusinessInjector {
     private static readonly _container = new Container();   
@@ -38,7 +48,7 @@ export class Injector extends BusinessInjector {
     public static readonly DATABASE_MANAGER = { value: Symbol.for('DatabaseManager')};
     public static readonly SERVER = { value: Symbol.for('Server')};
 
-    static initialize() {
+    public static initialize() {
         this._container.bind<Logger>(this.LOGGER.value).to(WinstonLogger).inSingletonScope();
         this._container.bind<ServiceRegister>(this.SERVICE_REGISTER.value).to(EurekaServiceRegister).inSingletonScope();
         this._container.bind<Server>(this.SERVER.value).to(ExpressServer).inSingletonScope();
@@ -55,6 +65,11 @@ export class Injector extends BusinessInjector {
         this._container.bind<Tokener>(this.TOKENER.value).to(JwtTokener).inSingletonScope();
         this._container.bind<Validator>(this.VALIDATOR.value).to(ClassValidator).inSingletonScope();
         this._container.bind<RefreshToken>(this.REFRESH_TOKEN.value).to(RefreshToken).inSingletonScope();
+        this._container.bind<SessionDataSource>(this.SESSION_DATASOURCE.value).to(SessionDatabaseDataSource).inSingletonScope();
+        this._container.bind<SessionProvider>(this.SESSION_PROVIDER.value).to(SessionMongoProvider).inSingletonScope();
+        this._container.bind<SessionRepository>(this.SESSION_REPOSITORY.value).to(SessionRepositoryImpl).inSingletonScope();
+        this._container.bind<SessionDataStore>(this.SESSION_DATASTORE.value).to(SessionDatabaseDataStore).inSingletonScope();
+        this._container.bind<SessionPersister>(this.SESSION_PERSISTER.value).to(SessionMongoPersister).inSingletonScope();
     }
 
     static get container() {

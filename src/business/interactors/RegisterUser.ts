@@ -18,7 +18,7 @@ export class RegisterUser extends UseCase<RegisterUserParams, any> {
     private cypher: Cypher;
 
     protected buildUseCaseObservable(params: RegisterUserParams): Observable<any> {
-        return this.userRepository.getUserByName(params.username)
+        return this.userRepository.getUserBy(params.username, params.email)
             .pipe(flatMap(storedUser => {
                 if (storedUser) {
                     throw new Error(Errors.USER_ALREADY_EXISTS);

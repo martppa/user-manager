@@ -13,13 +13,13 @@ export abstract class SessionHandlerUseCase<T> extends UseCase<T, Session> {
     @inject(BusinessInjector.TOKENER.value)
     protected tokener: Tokener;
     
-    public createSession(userId: string): Session {
-        const token = this.tokener.createToken({
+    public async createSession(userId: string): Promise<Session> {
+        const token = await this.tokener.createToken({
             type: Tokens.TOKEN_TYPE_SESSION, id: userId },
             Environment.JWT_KEY, { expiresIn: SessionHandlerUseCase.ONE_HOUR });
-        const refreshToken = this.tokener.createToken({
+        const refreshToken = await this.tokener.createToken({
             type: Tokens.TOKEN_TYPE_REFRESH, id: userId },
             Environment.JWT_KEY, { expiresIn: SessionHandlerUseCase.THIRTY_DAYS });
-        return new Session(token, refreshToken);
+        return new Session(token, refreshToken, userId);
     }
 }

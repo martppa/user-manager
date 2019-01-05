@@ -12,4 +12,9 @@ export class BusinessInjector  {
     public static readonly TOKENER = { value: Symbol.for('Tokener')};
     public static readonly VALIDATOR = { value: Symbol.for('Validator')};
     public static readonly REFRESH_TOKEN = { value: Symbol.for('RefreshToken')};
+    public static readonly SESSION_REPOSITORY = { value: Symbol.for('SessionRepository')};
+    public static readonly SESSION_DATASOURCE = { value: Symbol.for('SessionDataSource')};
+    public static readonly SESSION_DATASTORE = { value: Symbol.for('SessionDataStore')};
+    public static readonly SESSION_PROVIDER = { value: Symbol.for('SessionProvider')};
+    public static readonly SESSION_PERSISTER = { value: Symbol.for('SessionPersister')};
 }

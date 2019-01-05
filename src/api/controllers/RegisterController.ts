@@ -2,7 +2,6 @@ import { Post, Body, Res, JsonController } from "routing-controllers";
 import { Injector } from '../../main/di/Injector';
 import { RegisterUser, RegisterUserParams } from '../../business/interactors/RegisterUser';
 import UserValidationModel from '../validator/classvalidator/UserValidationModel';
-import { validate } from "class-validator";
 import { Controller } from "./Controller";
 import Validator from '../validator/Validator';
 import { BusinessInjector } from "../../business/di/BusinessInjector";
@@ -15,7 +14,7 @@ export class RegisterController extends Controller {
     public async register(@Body() body: any, @Res() res: any) {
         const logger = Injector.container.get<Logger>(BusinessInjector.LOGGER.value);
         const validator = Injector.container.get<Validator>(BusinessInjector.VALIDATOR.value);
-        const userValidationModel = new UserValidationModel(body.name, body.email, body.password);        
+        const userValidationModel = new UserValidationModel(body.username, body.email, body.password);        
 
         try {
             const errors = await validator.validate(userValidationModel);
@@ -30,7 +29,9 @@ export class RegisterController extends Controller {
         registerUser.execute((next: any) => {},
             (registryError: Error) => res.send(this.createErrorResponse([registryError.message])),
             () => res.send(this.createEmptySucessfulResponse()),
-            RegisterUserParams.forData(body.name, body.email, body.password));
+            RegisterUserParams.forData(userValidationModel.name, 
+                userValidationModel.email, 
+                userValidationModel.password));
                     
         return res;
     }

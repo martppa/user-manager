@@ -8,6 +8,7 @@ import Session from "../../business/models/Session";
 import SessionModelMapper from '../models/mappers/SessionModelMapper';
 import Validator from '../validator/Validator';
 import Logger from 'chk2common/dist/logger/Logger';
+import Errors from "../../business/constants/Errors";
 
 @JsonController('/signin')
 export default class LoginController extends Controller {
@@ -24,7 +25,8 @@ export default class LoginController extends Controller {
                 return res.send(this.createErrorResponse(errors));
             }
         } catch (error) {
-            logger.error(error.message);
+            logger.error(`Error when validating login data: ${error.message}`);
+            return res.send(this.createErrorResponse([Errors.INTERNAL_SERVER_ERROR]));
         }
 
         const loginUser = Injector.container.get<LoginUser>(BusinessInjector.LOGIN_USER.value);

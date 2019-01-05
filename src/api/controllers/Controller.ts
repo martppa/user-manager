@@ -10,6 +10,6 @@ export abstract class Controller {
     }
 
     protected createSucessfulResponse(content: any): string {
-        return new ResponseWrapper(Status.OK, new Array<string>(), content).stringify();
+        return new ResponseWrapper(Status.OK, undefined, content).stringify();
     }
 }

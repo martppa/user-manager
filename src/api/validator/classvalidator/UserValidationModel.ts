@@ -22,4 +22,16 @@ export default class UserValidationModel {
         this._email = email;
         this._password = password;
     }
+
+    public get name(): string {
+        return this._name;
+    }
+
+    public get email(): string {
+        return this._email;
+    }
+
+    public get password(): string {
+        return this._password;
+    }
 }

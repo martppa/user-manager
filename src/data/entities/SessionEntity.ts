@@ -1,4 +1,4 @@
-export default class Session {
+export default class SessionEntity {
     public constructor(private _token: string,
         private _refreshToken: string,
         private _userId: string) {}

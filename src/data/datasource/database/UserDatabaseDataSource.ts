@@ -10,8 +10,8 @@ export default class UserDatabaseDataSource implements UserDataSource {
     @inject(BusinessInjector.USER_PROVIDER.value)
     private userProvider: UserProvider;
 
-    public getUserByName(name: string): Observable<UserEntity> {
-        return this.userProvider.getUserByName(name);
+    public getUserBy(name: string, email?: string): Observable<UserEntity> {
+        return this.userProvider.getUserBy(name, email);
     }
 
     public getUserById(id: string): Observable<UserEntity> {

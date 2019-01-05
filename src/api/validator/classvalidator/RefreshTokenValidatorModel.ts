@@ -5,9 +5,13 @@ export default class RefreshTokenValidationModel {
     @MinLength(10, {
         message: Errors.INVALID_TOKEN
     })
-    private refreshToken: string;
+    private _refreshToken: string;
 
     public constructor(refreshToken: string) {
-        this.refreshToken = refreshToken;
+        this._refreshToken = refreshToken;
+    }
+
+    public get refreshToken(): string {
+        return this._refreshToken;
     }
 }
