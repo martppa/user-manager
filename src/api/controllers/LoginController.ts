@@ -25,7 +25,7 @@ export default class LoginController extends Controller {
                 return res.send(this.createErrorResponse(errors));
             }
         } catch (error) {
-            logger.error(`Error when validating login data: ${error.message}`);
+            logger.error(`Error during login data validation: ${error.message}`);
             return res.send(this.createErrorResponse([Errors.INTERNAL_SERVER_ERROR]));
         }
 
@@ -36,7 +36,7 @@ export default class LoginController extends Controller {
             }, 
             (loginError: Error) => res.send(this.createErrorResponse([loginError.message])),
             () => {}, 
-            LoginUserParams.forData(body.username, body.password));
+            LoginUserParams.forData(loginDataValidationModel.username, loginDataValidationModel.password));
         
         return res;
     }

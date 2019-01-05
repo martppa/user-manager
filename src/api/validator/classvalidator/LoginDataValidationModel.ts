@@ -16,4 +16,12 @@ export default class LoginDataValidationModel {
         this._name = name;
         this._password = password;
     }
+
+    public get username(): string {
+        return this._name;
+    }
+
+    public get password(): string {
+        return this._password;
+    }
 }

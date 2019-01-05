@@ -19,7 +19,7 @@ export default class SessionMongoProvider implements SessionProvider {
                 const sessions = await SessionSchema.find({ userId : userId });
                 subscriber.next(SessionSchemaMapper.mapToEntities(sessions));
             } catch (error) {
-                this.logger.error(error);
+                this.logger.error(`Error when querying session by user id: ${error}`);
                 subscriber.error(new Error(Errors.INTERNAL_SERVER_ERROR));
             }
         });

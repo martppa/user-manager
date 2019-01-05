@@ -20,7 +20,7 @@ export default class SessionMongoPersister implements SessionPersister {
                 await sessionSchema.save();
                 subscriber.complete();                
             } catch (error) {
-                this.logger.error(error);
+                this.logger.error(`Error when saving session: ${error}`);
                 subscriber.error(new Error(Errors.INTERNAL_SERVER_ERROR));
             }
         });
@@ -32,7 +32,7 @@ export default class SessionMongoPersister implements SessionPersister {
                 await SessionSchema.deleteMany({ token: token });
                 subscriber.complete();
             } catch (error) {
-                this.logger.error(error);
+                this.logger.error(`Error when removing session by token from database: ${error}`);
                 subscriber.error(new Error(Errors.INTERNAL_SERVER_ERROR));
             }
         });

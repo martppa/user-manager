@@ -18,7 +18,7 @@ export default class UserMongoPersister implements UserPersister {
                 await userSchema.save();
                 subscriber.complete();                
             } catch (error) {
-                this.logger.error(error);
+                this.logger.error(`Error when saving user: ${error}`);
                 subscriber.error(new Error(Errors.INTERNAL_SERVER_ERROR));
             }
         });

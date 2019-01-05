@@ -35,7 +35,9 @@ export class LoginUser extends SessionHandlerUseCase<LoginUserParams> {
                 }                
                 return from(this.createSession(storedUser.id));
             }))
-            .pipe(flatMap(session => this.saveSession(session).pipe(concat(of(session)))));
+            .pipe(flatMap(session => this.saveSession(session)
+            //TODO: Broadcast token to other services
+            .pipe(concat(of(session)))));
     }
 
     private saveSession(session: Session): Observable<any> {

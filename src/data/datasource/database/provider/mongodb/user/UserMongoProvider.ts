@@ -21,7 +21,7 @@ export default class UserMongoProvider implements UserProvider {
                 subscriber.next(UserSchemaMapper.mapToEntity(foundUser));
                 subscriber.complete();                
             } catch (error) {
-                this.logger.error(error);
+                this.logger.error(`Error when querying user by username or email: ${error}`);
                 subscriber.error(new Error(Errors.INTERNAL_SERVER_ERROR));
             }
         });
@@ -34,7 +34,7 @@ export default class UserMongoProvider implements UserProvider {
                 subscriber.next(UserSchemaMapper.mapToEntity(foundUser));
                 subscriber.complete();                
             } catch (error) {
-                this.logger.error(error);
+                this.logger.error(`Error when querying user by id: ${error}`);
                 subscriber.error(new Error(Errors.INTERNAL_SERVER_ERROR));
             }
         });

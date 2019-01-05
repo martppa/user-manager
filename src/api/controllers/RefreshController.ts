@@ -4,10 +4,11 @@ import { Injector } from '../../main/di/Injector';
 import Logger from 'chk2common/dist/logger/Logger';
 import Validator from '../validator/Validator';
 import { BusinessInjector } from '../../business/di/BusinessInjector';
-import RefreshTokenValidationModel from '../validator/classvalidator/RefreshTokenValidatorModel';
+import RefreshTokenValidationModel from '../validator/classvalidator/RefreshTokenValidationModel';
 import { RefreshToken, RefreshTokenParams } from '../../business/interactors/RefreshToken';
 import Session from '../../business/models/Session';
 import SessionModelMapper from '../models/mappers/SessionModelMapper';
+import Errors from '../../business/constants/Errors';
 
 @JsonController('/refresh')
 export default class LoginController extends Controller {
@@ -24,7 +25,8 @@ export default class LoginController extends Controller {
                 return res.send(this.createErrorResponse(errors));
             }
         } catch (error) {
-            logger.error(error.message);
+            logger.error(`Error during refresh token validation: ${error.message}`);
+            return res.send(this.createErrorResponse([Errors.INTERNAL_SERVER_ERROR]));
         }
 
         const refreshToken = Injector.container.get<RefreshToken>(BusinessInjector.REFRESH_TOKEN.value);

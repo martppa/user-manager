@@ -6,6 +6,7 @@ import { Controller } from "./Controller";
 import Validator from '../validator/Validator';
 import { BusinessInjector } from "../../business/di/BusinessInjector";
 import Logger from 'chk2common/dist/logger/Logger';
+import Errors from "../../business/constants/Errors";
 
 @JsonController('/signup')
 export class RegisterController extends Controller {
@@ -22,7 +23,8 @@ export class RegisterController extends Controller {
                 return res.send(this.createErrorResponse(errors));
             }
         } catch (error) {
-            logger.error(error.message);
+            logger.error(`Error during user details validation: ${error.message}`);
+            return res.send(this.createErrorResponse([Errors.INTERNAL_SERVER_ERROR]));
         }
 
         const registerUser = Injector.container.get<RegisterUser>(BusinessInjector.REGISTER_USER.value);        

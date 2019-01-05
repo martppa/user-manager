@@ -7,8 +7,8 @@ import Tokens from '../constants/Tokens';
 import Environment from '../environment/Environment';
 
 export abstract class SessionHandlerUseCase<T> extends UseCase<T, Session> {
-    private static ONE_HOUR = "1h";
-    private static THIRTY_DAYS = "30d";
+    private static readonly ONE_HOUR = "1h";
+    private static readonly THIRTY_DAYS = "30d";
 
     @inject(BusinessInjector.TOKENER.value)
     protected tokener: Tokener;
