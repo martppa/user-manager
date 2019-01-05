@@ -67,15 +67,13 @@ export class RefreshToken extends SessionHandlerUseCase<RefreshTokenParams> {
     }
 
     private getSessionFromToken(sessions: Session[], token: string): Session {
-        var validToken = false;
         var oldSession = undefined;
         sessions.forEach(session => {
             if (session.refreshToken === token) {
-                validToken = true;
                 oldSession = session;
             }
         });
-        if (!validToken) {
+        if (!oldSession) {
             throw new Error(Errors.INVALID_TOKEN);
         }
         return oldSession;
