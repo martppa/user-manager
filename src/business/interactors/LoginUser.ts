@@ -8,6 +8,7 @@ import { flatMap, map, concat } from "rxjs/operators";
 import Errors from "../constants/Errors";
 import { SessionHandlerUseCase } from './SessionHandlerUseCase';
 import { SessionRepository } from '../repositories/SessionRepository';
+import SessionNotifier from '../comm/SessionNotifier';
 
 @injectable()
 export class LoginUser extends SessionHandlerUseCase<LoginUserParams> {
@@ -19,6 +20,9 @@ export class LoginUser extends SessionHandlerUseCase<LoginUserParams> {
 
     @inject(BusinessInjector.CYPHER.value)
     private cypher: Cypher;
+
+    @inject(BusinessInjector.SESSION_NOTIFIER)
+    private sessionNotifier: SessionNotifier;
 
     protected buildUseCaseObservable(params: LoginUserParams): Observable<Session> {
         return this.userRepository.getUserBy(params.getUsername())
@@ -33,10 +37,10 @@ export class LoginUser extends SessionHandlerUseCase<LoginUserParams> {
                 if (!match) {
                     throw new Error(Errors.WRONG_PASSWORD);
                 }                
-                return from(this.createSession(storedUser.id));
+                return from(this.createSession(storedUser.id, storedUser.name, storedUser.email));
             }))
             .pipe(flatMap(session => this.saveSession(session)
-            //TODO: Broadcast token to other services
+            .pipe(concat(this.sessionNotifier.notifyLogin(session.token)))
             .pipe(concat(of(session)))));
     }
 

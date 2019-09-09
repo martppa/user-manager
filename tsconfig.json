@@ -4,11 +4,14 @@
       "lib": ["es6", "dom"],
       "module": "commonjs",
       "outDir": "dist",
-      "types": ["reflect-metadata"],
+      "types": ["reflect-metadata", "node"],
       "experimentalDecorators": true,
       "emitDecoratorMetadata": true,
       "sourceMap": true,
-      "resolveJsonModule": true
+      "resolveJsonModule": true,
+      "typeRoots": [
+        "node_modules/@types"
+      ]
     },
     "include": [
       "src/**/*.ts"

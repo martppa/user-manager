@@ -7,34 +7,42 @@ import { BusinessInjector } from '../../business/di/BusinessInjector';
 import Session from "../../business/models/Session";
 import SessionModelMapper from '../models/mappers/SessionModelMapper';
 import Validator from '../validator/Validator';
-import Logger from 'chk2common/dist/logger/Logger';
 import Errors from "../../business/constants/Errors";
+import Logger from 'chk2global/dist/logger/Logger';
 
-@JsonController('/signin')
+@JsonController('/user')
 export default class LoginController extends Controller {
+    private readonly TAG: string = this.constructor.name;
+
+    private logger: Logger;
+    private validator: Validator;
+
+    public constructor() {
+        super();
+        this.logger = Injector.get<Logger>(BusinessInjector.LOGGER.value);
+        this.validator = Injector.get<Validator>(BusinessInjector.VALIDATOR.value);
+    }
     
-    @Post('/')
+    @Post('/signin')
     public async login(@Body() body: any, @Res() res: any) {
-        const logger = Injector.container.get<Logger>(BusinessInjector.LOGGER.value);
-        const validator = Injector.container.get<Validator>(BusinessInjector.VALIDATOR.value);
         const loginDataValidationModel = new LoginDataValidationModel(body.username, body.password);
 
         try {
-            const errors = await validator.validate(loginDataValidationModel);
+            const errors = await this.validator.validate(loginDataValidationModel);
             if (errors.length > 0) {
-                return res.send(this.createErrorResponse(errors));
+                return res.send(this.createErrorResponseString(errors));
             }
         } catch (error) {
-            logger.error(`Error during login data validation: ${error.message}`);
-            return res.send(this.createErrorResponse([Errors.INTERNAL_SERVER_ERROR]));
+            this.logger.error(this.TAG, `Error during login data validation: ${error.message}`);
+            return res.send(this.createErrorResponseString([Errors.INTERNAL_SERVER_ERROR]));
         }
 
-        const loginUser = Injector.container.get<LoginUser>(BusinessInjector.LOGIN_USER.value);
+        const loginUser = Injector.get<LoginUser>(BusinessInjector.LOGIN_USER.value);
         loginUser.execute((session: Session) => {
                 const sessionModel = SessionModelMapper.map(session);
-                res.send(this.createSucessfulResponse(sessionModel));
+                res.send(this.createSucessfulResponseString(sessionModel));
             }, 
-            (loginError: Error) => res.send(this.createErrorResponse([loginError.message])),
+            (loginError: Error) => res.send(this.createErrorResponseString([loginError.message])),
             () => {}, 
             LoginUserParams.forData(loginDataValidationModel.username, loginDataValidationModel.password));
         

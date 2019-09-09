@@ -1,4 +1,4 @@
 export default class SessionModel {
-    public constructor(private token: string, 
-        private refreshToken: string) {}
+    public constructor(public token: string, 
+        public refreshToken: string) {}
 }

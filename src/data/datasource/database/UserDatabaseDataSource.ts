@@ -6,7 +6,8 @@ import { BusinessInjector } from '../../../business/di/BusinessInjector';
 import UserProvider from './provider/UserProvider';
 
 @injectable()
-export default class UserDatabaseDataSource implements UserDataSource {    
+export default class UserDatabaseDataSource implements UserDataSource {
+  
     @inject(BusinessInjector.USER_PROVIDER.value)
     private userProvider: UserProvider;
 
@@ -16,5 +17,13 @@ export default class UserDatabaseDataSource implements UserDataSource {
 
     public getUserById(id: string): Observable<UserEntity> {
         return this.userProvider.getUserById(id);
+    }
+
+    public usersExit(userIds: string[]): Observable<boolean> {
+        return this.userProvider.usersExist(userIds);
+    }
+
+    public getUsers(): Observable<UserEntity[]> {
+        return this.userProvider.getUsers();
     }
 }

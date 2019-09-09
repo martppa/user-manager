@@ -5,36 +5,37 @@ import UserValidationModel from '../validator/classvalidator/UserValidationModel
 import { Controller } from "./Controller";
 import Validator from '../validator/Validator';
 import { BusinessInjector } from "../../business/di/BusinessInjector";
-import Logger from 'chk2common/dist/logger/Logger';
+import Logger from 'chk2global/dist/logger/Logger';
 import Errors from "../../business/constants/Errors";
 
-@JsonController('/signup')
+@JsonController('/user')
 export class RegisterController extends Controller {
+    private readonly TAG: string = this.constructor.name;
 
-    @Post('/')
+    @Post('/signup')
     public async register(@Body() body: any, @Res() res: any) {
-        const logger = Injector.container.get<Logger>(BusinessInjector.LOGGER.value);
-        const validator = Injector.container.get<Validator>(BusinessInjector.VALIDATOR.value);
-        const userValidationModel = new UserValidationModel(body.username, body.email, body.password);        
+        const logger = Injector.get<Logger>(BusinessInjector.LOGGER.value);
+        const validator = Injector.get<Validator>(BusinessInjector.VALIDATOR.value);
+        const userValidationModel = new UserValidationModel(body.username, body.email, body.password);       
 
         try {
             const errors = await validator.validate(userValidationModel);
             if (errors.length > 0) {
-                return res.send(this.createErrorResponse(errors));
+                return res.send(this.createErrorResponseString(errors));
             }
         } catch (error) {
-            logger.error(`Error during user details validation: ${error.message}`);
-            return res.send(this.createErrorResponse([Errors.INTERNAL_SERVER_ERROR]));
+            logger.error(this.TAG, `Error during user details validation: ${error.message}`);
+            return res.send(this.createErrorResponseString([Errors.INTERNAL_SERVER_ERROR]));
         }
 
-        const registerUser = Injector.container.get<RegisterUser>(BusinessInjector.REGISTER_USER.value);        
+        const registerUser = Injector.get<RegisterUser>(BusinessInjector.REGISTER_USER.value);       
         registerUser.execute((next: any) => {},
-            (registryError: Error) => res.send(this.createErrorResponse([registryError.message])),
-            () => res.send(this.createEmptySucessfulResponse()),
+            (registryError: Error) => res.send(this.createErrorResponseString([registryError.message])),
+            () => res.send(this.createEmptySucessfulResponseString()),
             RegisterUserParams.forData(userValidationModel.name, 
                 userValidationModel.email, 
                 userValidationModel.password));
                     
         return res;
-    }
+    }    
 }

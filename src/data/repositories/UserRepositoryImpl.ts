@@ -9,7 +9,8 @@ import { BusinessInjector } from '../../business/di/BusinessInjector';
 import UserDataSource from '../datasource/UserDataSource';
 
 @injectable()
-export class UserRepositoryImpl implements UserRepository {    
+export class UserRepositoryImpl implements UserRepository {
+       
     @inject(BusinessInjector.USER_DATA_STORE.value)
     private userDataStore: UserDataStore;
 
@@ -26,5 +27,13 @@ export class UserRepositoryImpl implements UserRepository {
 
     public getUserById(id: string): Observable<User> {
         return this.userDataSource.getUserById(id).pipe(map(user => UserEntityMapper.mapToModel(user)));
+    }
+
+    public usersExist(userIds: string[]): Observable<boolean> {
+        return this.userDataSource.usersExit(userIds);
+    }
+    
+    public getUsers(): Observable<User[]> {
+        return this.userDataSource.getUsers().pipe(map(users => UserEntityMapper.mapToModels(users)));
     }
 }

@@ -1,6 +1,6 @@
 {
   "name": "user-manager",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,13 @@
     "debug": "DEBUG=express:* npm run start",
     "clean": "node ./node_modules/rimraf/bin.js dist",
     "build": "node ./node_modules/typescript/bin/tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "unpublish-repo": "npm unpublish --force --registry http://chikchak.ddns.net:4873",
+    "publish-repo": "npm publish --registry http://chikchak.ddns.net:4873",
+    "build-publish": "npm build && npm run unpublish-repo && npm run publish-repo",
+    "docker": "npm run build-docker && docker run -p 2425:2425 chk2/user-manager",
+    "build-docker": "docker build . -t chk2/user-manager",
+    "docker-shell": "docker run -it chk2/user-manager sh"
   },
   "author": "dieppa",
   "license": "ISC",
@@ -24,10 +30,14 @@
     "@types/rimraf": "^2.0.2",
     "@types/rx": "^4.1.1",
     "@types/winston": "^2.4.4",
+    "amqplib": "^0.5.3",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "chk2common": "0.0.8",
+    "chk2event-client": "0.0.1",
     "chk2global": "0.0.3",
+    "chk2session-bridge": "0.0.1",
+    "chk2user-bridge": "0.0.1",
     "class-validator": "^0.9.1",
     "cloud-config-client": "^1.4.2",
     "cors": "^2.8.5",
@@ -44,6 +54,7 @@
     "routing-controllers": "^0.7.7",
     "rxjs": "^6.3.3",
     "typescript": "^3.2.2",
+    "uuid": "^3.3.2",
     "winston": "^3.1.0"
   }
 }

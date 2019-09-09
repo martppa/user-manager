@@ -1,0 +1,1900 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData @types/bcrypt
+20 silly mapToRegistry name @types/bcrypt
+21 silly mapToRegistry scope (from package name) @types
+22 verbose mapToRegistry no registry URL found in name for scope @types
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+25 silly mapToRegistry uri http://chikchak.ddns.net:4873/@types%2fbcrypt
+26 silly fetchNamedPackageData @types/body-parser
+27 silly mapToRegistry name @types/body-parser
+28 silly mapToRegistry scope (from package name) @types
+29 verbose mapToRegistry no registry URL found in name for scope @types
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+32 silly mapToRegistry uri http://chikchak.ddns.net:4873/@types%2fbody-parser
+33 silly fetchNamedPackageData @types/cors
+34 silly mapToRegistry name @types/cors
+35 silly mapToRegistry scope (from package name) @types
+36 verbose mapToRegistry no registry URL found in name for scope @types
+37 silly mapToRegistry using default registry
+38 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+39 silly mapToRegistry uri http://chikchak.ddns.net:4873/@types%2fcors
+40 silly fetchNamedPackageData @types/eureka-js-client
+41 silly mapToRegistry name @types/eureka-js-client
+42 silly mapToRegistry scope (from package name) @types
+43 verbose mapToRegistry no registry URL found in name for scope @types
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+46 silly mapToRegistry uri http://chikchak.ddns.net:4873/@types%2feureka-js-client
+47 silly fetchNamedPackageData @types/express
+48 silly mapToRegistry name @types/express
+49 silly mapToRegistry scope (from package name) @types
+50 verbose mapToRegistry no registry URL found in name for scope @types
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+53 silly mapToRegistry uri http://chikchak.ddns.net:4873/@types%2fexpress
+54 silly fetchNamedPackageData @types/mongodb
+55 silly mapToRegistry name @types/mongodb
+56 silly mapToRegistry scope (from package name) @types
+57 verbose mapToRegistry no registry URL found in name for scope @types
+58 silly mapToRegistry using default registry
+59 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+60 silly mapToRegistry uri http://chikchak.ddns.net:4873/@types%2fmongodb
+61 silly fetchNamedPackageData @types/mongoose
+62 silly mapToRegistry name @types/mongoose
+63 silly mapToRegistry scope (from package name) @types
+64 verbose mapToRegistry no registry URL found in name for scope @types
+65 silly mapToRegistry using default registry
+66 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+67 silly mapToRegistry uri http://chikchak.ddns.net:4873/@types%2fmongoose
+68 silly fetchNamedPackageData @types/multer
+69 silly mapToRegistry name @types/multer
+70 silly mapToRegistry scope (from package name) @types
+71 verbose mapToRegistry no registry URL found in name for scope @types
+72 silly mapToRegistry using default registry
+73 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+74 silly mapToRegistry uri http://chikchak.ddns.net:4873/@types%2fmulter
+75 silly fetchNamedPackageData @types/rimraf
+76 silly mapToRegistry name @types/rimraf
+77 silly mapToRegistry scope (from package name) @types
+78 verbose mapToRegistry no registry URL found in name for scope @types
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+81 silly mapToRegistry uri http://chikchak.ddns.net:4873/@types%2frimraf
+82 silly fetchNamedPackageData @types/rx
+83 silly mapToRegistry name @types/rx
+84 silly mapToRegistry scope (from package name) @types
+85 verbose mapToRegistry no registry URL found in name for scope @types
+86 silly mapToRegistry using default registry
+87 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+88 silly mapToRegistry uri http://chikchak.ddns.net:4873/@types%2frx
+89 silly fetchNamedPackageData @types/winston
+90 silly mapToRegistry name @types/winston
+91 silly mapToRegistry scope (from package name) @types
+92 verbose mapToRegistry no registry URL found in name for scope @types
+93 silly mapToRegistry using default registry
+94 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+95 silly mapToRegistry uri http://chikchak.ddns.net:4873/@types%2fwinston
+96 silly fetchNamedPackageData amqplib
+97 silly mapToRegistry name amqplib
+98 silly mapToRegistry using default registry
+99 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+100 silly mapToRegistry uri http://chikchak.ddns.net:4873/amqplib
+101 silly fetchNamedPackageData bcryptjs
+102 silly mapToRegistry name bcryptjs
+103 silly mapToRegistry using default registry
+104 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+105 silly mapToRegistry uri http://chikchak.ddns.net:4873/bcryptjs
+106 silly fetchNamedPackageData body-parser
+107 silly mapToRegistry name body-parser
+108 silly mapToRegistry using default registry
+109 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+110 silly mapToRegistry uri http://chikchak.ddns.net:4873/body-parser
+111 silly fetchNamedPackageData chk2common
+112 silly mapToRegistry name chk2common
+113 silly mapToRegistry using default registry
+114 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+115 silly mapToRegistry uri http://chikchak.ddns.net:4873/chk2common
+116 silly fetchNamedPackageData chk2event-client
+117 silly mapToRegistry name chk2event-client
+118 silly mapToRegistry using default registry
+119 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+120 silly mapToRegistry uri http://chikchak.ddns.net:4873/chk2event-client
+121 silly fetchNamedPackageData chk2global
+122 silly mapToRegistry name chk2global
+123 silly mapToRegistry using default registry
+124 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+125 silly mapToRegistry uri http://chikchak.ddns.net:4873/chk2global
+126 silly fetchNamedPackageData chk2session-bridge
+127 silly mapToRegistry name chk2session-bridge
+128 silly mapToRegistry using default registry
+129 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+130 silly mapToRegistry uri http://chikchak.ddns.net:4873/chk2session-bridge
+131 silly fetchNamedPackageData chk2user-bridge
+132 silly mapToRegistry name chk2user-bridge
+133 silly mapToRegistry using default registry
+134 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+135 silly mapToRegistry uri http://chikchak.ddns.net:4873/chk2user-bridge
+136 silly fetchNamedPackageData class-validator
+137 silly mapToRegistry name class-validator
+138 silly mapToRegistry using default registry
+139 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+140 silly mapToRegistry uri http://chikchak.ddns.net:4873/class-validator
+141 silly fetchNamedPackageData cloud-config-client
+142 silly mapToRegistry name cloud-config-client
+143 silly mapToRegistry using default registry
+144 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+145 silly mapToRegistry uri http://chikchak.ddns.net:4873/cloud-config-client
+146 silly fetchNamedPackageData cors
+147 silly mapToRegistry name cors
+148 silly mapToRegistry using default registry
+149 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+150 silly mapToRegistry uri http://chikchak.ddns.net:4873/cors
+151 silly fetchNamedPackageData eureka-js-client
+152 silly mapToRegistry name eureka-js-client
+153 silly mapToRegistry using default registry
+154 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+155 silly mapToRegistry uri http://chikchak.ddns.net:4873/eureka-js-client
+156 silly fetchNamedPackageData express
+157 silly mapToRegistry name express
+158 silly mapToRegistry using default registry
+159 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+160 silly mapToRegistry uri http://chikchak.ddns.net:4873/express
+161 silly fetchNamedPackageData inversify
+162 silly mapToRegistry name inversify
+163 silly mapToRegistry using default registry
+164 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+165 silly mapToRegistry uri http://chikchak.ddns.net:4873/inversify
+166 silly fetchNamedPackageData jsonwebtoken
+167 silly mapToRegistry name jsonwebtoken
+168 silly mapToRegistry using default registry
+169 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+170 silly mapToRegistry uri http://chikchak.ddns.net:4873/jsonwebtoken
+171 silly fetchNamedPackageData mongoose
+172 silly mapToRegistry name mongoose
+173 silly mapToRegistry using default registry
+174 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+175 silly mapToRegistry uri http://chikchak.ddns.net:4873/mongoose
+176 silly fetchNamedPackageData morgan
+177 silly mapToRegistry name morgan
+178 silly mapToRegistry using default registry
+179 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+180 silly mapToRegistry uri http://chikchak.ddns.net:4873/morgan
+181 silly fetchNamedPackageData multer
+182 silly mapToRegistry name multer
+183 silly mapToRegistry using default registry
+184 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+185 silly mapToRegistry uri http://chikchak.ddns.net:4873/multer
+186 silly fetchNamedPackageData path
+187 silly mapToRegistry name path
+188 silly mapToRegistry using default registry
+189 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+190 silly mapToRegistry uri http://chikchak.ddns.net:4873/path
+191 silly fetchNamedPackageData reflect-metadata
+192 silly mapToRegistry name reflect-metadata
+193 silly mapToRegistry using default registry
+194 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+195 silly mapToRegistry uri http://chikchak.ddns.net:4873/reflect-metadata
+196 silly fetchNamedPackageData rimraf
+197 silly mapToRegistry name rimraf
+198 silly mapToRegistry using default registry
+199 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+200 silly mapToRegistry uri http://chikchak.ddns.net:4873/rimraf
+201 silly fetchNamedPackageData routing-controllers
+202 silly mapToRegistry name routing-controllers
+203 silly mapToRegistry using default registry
+204 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+205 silly mapToRegistry uri http://chikchak.ddns.net:4873/routing-controllers
+206 silly fetchNamedPackageData rxjs
+207 silly mapToRegistry name rxjs
+208 silly mapToRegistry using default registry
+209 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+210 silly mapToRegistry uri http://chikchak.ddns.net:4873/rxjs
+211 silly fetchNamedPackageData typescript
+212 silly mapToRegistry name typescript
+213 silly mapToRegistry using default registry
+214 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+215 silly mapToRegistry uri http://chikchak.ddns.net:4873/typescript
+216 silly fetchNamedPackageData uuid
+217 silly mapToRegistry name uuid
+218 silly mapToRegistry using default registry
+219 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+220 silly mapToRegistry uri http://chikchak.ddns.net:4873/uuid
+221 silly fetchNamedPackageData winston
+222 silly mapToRegistry name winston
+223 silly mapToRegistry using default registry
+224 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+225 silly mapToRegistry uri http://chikchak.ddns.net:4873/winston
+226 verbose request uri http://chikchak.ddns.net:4873/@types%2fbcrypt
+227 verbose request no auth needed
+228 info attempt registry request try #1 at 10:17:50 AM
+229 verbose request id a3d5866dca31ccc2
+230 http request GET http://chikchak.ddns.net:4873/@types%2fbcrypt
+231 verbose request uri http://chikchak.ddns.net:4873/@types%2fbody-parser
+232 verbose request no auth needed
+233 info attempt registry request try #1 at 10:17:50 AM
+234 http request GET http://chikchak.ddns.net:4873/@types%2fbody-parser
+235 verbose request uri http://chikchak.ddns.net:4873/@types%2fcors
+236 verbose request no auth needed
+237 info attempt registry request try #1 at 10:17:50 AM
+238 http request GET http://chikchak.ddns.net:4873/@types%2fcors
+239 verbose request uri http://chikchak.ddns.net:4873/@types%2feureka-js-client
+240 verbose request no auth needed
+241 info attempt registry request try #1 at 10:17:50 AM
+242 http request GET http://chikchak.ddns.net:4873/@types%2feureka-js-client
+243 verbose request uri http://chikchak.ddns.net:4873/@types%2fexpress
+244 verbose request no auth needed
+245 info attempt registry request try #1 at 10:17:50 AM
+246 http request GET http://chikchak.ddns.net:4873/@types%2fexpress
+247 verbose request uri http://chikchak.ddns.net:4873/@types%2fmongodb
+248 verbose request no auth needed
+249 info attempt registry request try #1 at 10:17:50 AM
+250 http request GET http://chikchak.ddns.net:4873/@types%2fmongodb
+251 verbose request uri http://chikchak.ddns.net:4873/@types%2fmongoose
+252 verbose request no auth needed
+253 info attempt registry request try #1 at 10:17:50 AM
+254 http request GET http://chikchak.ddns.net:4873/@types%2fmongoose
+255 verbose request uri http://chikchak.ddns.net:4873/@types%2fmulter
+256 verbose request no auth needed
+257 info attempt registry request try #1 at 10:17:50 AM
+258 http request GET http://chikchak.ddns.net:4873/@types%2fmulter
+259 verbose request uri http://chikchak.ddns.net:4873/@types%2frimraf
+260 verbose request no auth needed
+261 info attempt registry request try #1 at 10:17:50 AM
+262 http request GET http://chikchak.ddns.net:4873/@types%2frimraf
+263 verbose request uri http://chikchak.ddns.net:4873/@types%2frx
+264 verbose request no auth needed
+265 info attempt registry request try #1 at 10:17:50 AM
+266 http request GET http://chikchak.ddns.net:4873/@types%2frx
+267 verbose request uri http://chikchak.ddns.net:4873/@types%2fwinston
+268 verbose request no auth needed
+269 info attempt registry request try #1 at 10:17:50 AM
+270 http request GET http://chikchak.ddns.net:4873/@types%2fwinston
+271 verbose request uri http://chikchak.ddns.net:4873/amqplib
+272 verbose request no auth needed
+273 info attempt registry request try #1 at 10:17:50 AM
+274 http request GET http://chikchak.ddns.net:4873/amqplib
+275 verbose request uri http://chikchak.ddns.net:4873/bcryptjs
+276 verbose request no auth needed
+277 info attempt registry request try #1 at 10:17:50 AM
+278 http request GET http://chikchak.ddns.net:4873/bcryptjs
+279 verbose request uri http://chikchak.ddns.net:4873/chk2common
+280 verbose request no auth needed
+281 info attempt registry request try #1 at 10:17:50 AM
+282 http request GET http://chikchak.ddns.net:4873/chk2common
+283 verbose request uri http://chikchak.ddns.net:4873/chk2event-client
+284 verbose request no auth needed
+285 info attempt registry request try #1 at 10:17:50 AM
+286 http request GET http://chikchak.ddns.net:4873/chk2event-client
+287 verbose request uri http://chikchak.ddns.net:4873/chk2session-bridge
+288 verbose request no auth needed
+289 info attempt registry request try #1 at 10:17:50 AM
+290 http request GET http://chikchak.ddns.net:4873/chk2session-bridge
+291 verbose request uri http://chikchak.ddns.net:4873/chk2user-bridge
+292 verbose request no auth needed
+293 info attempt registry request try #1 at 10:17:50 AM
+294 http request GET http://chikchak.ddns.net:4873/chk2user-bridge
+295 verbose request uri http://chikchak.ddns.net:4873/class-validator
+296 verbose request no auth needed
+297 info attempt registry request try #1 at 10:17:50 AM
+298 http request GET http://chikchak.ddns.net:4873/class-validator
+299 verbose request uri http://chikchak.ddns.net:4873/cloud-config-client
+300 verbose request no auth needed
+301 info attempt registry request try #1 at 10:17:50 AM
+302 http request GET http://chikchak.ddns.net:4873/cloud-config-client
+303 verbose request uri http://chikchak.ddns.net:4873/cors
+304 verbose request no auth needed
+305 info attempt registry request try #1 at 10:17:50 AM
+306 http request GET http://chikchak.ddns.net:4873/cors
+307 verbose request uri http://chikchak.ddns.net:4873/eureka-js-client
+308 verbose request no auth needed
+309 info attempt registry request try #1 at 10:17:50 AM
+310 http request GET http://chikchak.ddns.net:4873/eureka-js-client
+311 verbose request uri http://chikchak.ddns.net:4873/mongoose
+312 verbose request no auth needed
+313 info attempt registry request try #1 at 10:17:50 AM
+314 http request GET http://chikchak.ddns.net:4873/mongoose
+315 verbose request uri http://chikchak.ddns.net:4873/morgan
+316 verbose request no auth needed
+317 info attempt registry request try #1 at 10:17:50 AM
+318 http request GET http://chikchak.ddns.net:4873/morgan
+319 verbose request uri http://chikchak.ddns.net:4873/multer
+320 verbose request no auth needed
+321 info attempt registry request try #1 at 10:17:50 AM
+322 http request GET http://chikchak.ddns.net:4873/multer
+323 verbose request uri http://chikchak.ddns.net:4873/path
+324 verbose request no auth needed
+325 info attempt registry request try #1 at 10:17:50 AM
+326 http request GET http://chikchak.ddns.net:4873/path
+327 verbose request uri http://chikchak.ddns.net:4873/routing-controllers
+328 verbose request no auth needed
+329 info attempt registry request try #1 at 10:17:50 AM
+330 http request GET http://chikchak.ddns.net:4873/routing-controllers
+331 verbose request uri http://chikchak.ddns.net:4873/winston
+332 verbose request no auth needed
+333 info attempt registry request try #1 at 10:17:50 AM
+334 http request GET http://chikchak.ddns.net:4873/winston
+335 verbose request uri http://chikchak.ddns.net:4873/chk2global
+336 verbose request no auth needed
+337 info attempt registry request try #1 at 10:17:50 AM
+338 verbose etag "9b6ec581b1494c366afd32f1f78e9a85"
+339 http request GET http://chikchak.ddns.net:4873/chk2global
+340 verbose request uri http://chikchak.ddns.net:4873/body-parser
+341 verbose request no auth needed
+342 info attempt registry request try #1 at 10:17:50 AM
+343 verbose etag "53b7ec0be14cb14e14845deaf56f6af0"
+344 http request GET http://chikchak.ddns.net:4873/body-parser
+345 verbose request uri http://chikchak.ddns.net:4873/express
+346 verbose request no auth needed
+347 info attempt registry request try #1 at 10:17:50 AM
+348 verbose etag "2b708d7c7b0ad1e27100a0efa94a4e6e"
+349 http request GET http://chikchak.ddns.net:4873/express
+350 verbose request uri http://chikchak.ddns.net:4873/jsonwebtoken
+351 verbose request no auth needed
+352 info attempt registry request try #1 at 10:17:50 AM
+353 verbose etag "f897c5ed6d0fc098a24a5d3058bd14ea"
+354 http request GET http://chikchak.ddns.net:4873/jsonwebtoken
+355 verbose request uri http://chikchak.ddns.net:4873/rimraf
+356 verbose request no auth needed
+357 info attempt registry request try #1 at 10:17:50 AM
+358 verbose etag "ec086c00b203534c6f8e5b31af4a327e"
+359 http request GET http://chikchak.ddns.net:4873/rimraf
+360 verbose request uri http://chikchak.ddns.net:4873/reflect-metadata
+361 verbose request no auth needed
+362 info attempt registry request try #1 at 10:17:50 AM
+363 verbose etag "3bf551de22ea0149e2d3a846a04e4e44"
+364 http request GET http://chikchak.ddns.net:4873/reflect-metadata
+365 verbose request uri http://chikchak.ddns.net:4873/inversify
+366 verbose request no auth needed
+367 info attempt registry request try #1 at 10:17:50 AM
+368 verbose etag "0f586b1e1751585241c24dfc9e5c1861"
+369 http request GET http://chikchak.ddns.net:4873/inversify
+370 verbose request uri http://chikchak.ddns.net:4873/uuid
+371 verbose request no auth needed
+372 info attempt registry request try #1 at 10:17:50 AM
+373 verbose etag "00f074a583b327b748a7863d94164691"
+374 http request GET http://chikchak.ddns.net:4873/uuid
+375 verbose request uri http://chikchak.ddns.net:4873/rxjs
+376 verbose request no auth needed
+377 info attempt registry request try #1 at 10:17:50 AM
+378 verbose etag "a4b6783ea1207fbc1a1bb4a5197f4ac1"
+379 http request GET http://chikchak.ddns.net:4873/rxjs
+380 verbose request uri http://chikchak.ddns.net:4873/typescript
+381 verbose request no auth needed
+382 info attempt registry request try #1 at 10:17:50 AM
+383 verbose etag "9a5274d2da057865c1e960715e18f427"
+384 http request GET http://chikchak.ddns.net:4873/typescript
+385 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+386 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+387 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+388 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+389 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+390 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+391 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+392 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+393 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+394 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+395 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+396 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+397 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+398 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+399 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+400 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+401 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+402 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+403 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+404 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+405 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+406 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+407 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+408 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+409 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+410 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+411 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+412 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+413 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+414 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+415 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+416 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+417 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+418 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+419 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+420 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+421 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+422 info attempt registry request try #2 at 10:19:03 AM
+423 verbose etag "0f586b1e1751585241c24dfc9e5c1861"
+424 http request GET http://chikchak.ddns.net:4873/inversify
+425 info attempt registry request try #2 at 10:19:03 AM
+426 http request GET http://chikchak.ddns.net:4873/@types%2frx
+427 info attempt registry request try #2 at 10:19:03 AM
+428 http request GET http://chikchak.ddns.net:4873/class-validator
+429 info attempt registry request try #2 at 10:19:03 AM
+430 verbose etag "3bf551de22ea0149e2d3a846a04e4e44"
+431 http request GET http://chikchak.ddns.net:4873/reflect-metadata
+432 info attempt registry request try #2 at 10:19:03 AM
+433 http request GET http://chikchak.ddns.net:4873/chk2session-bridge
+434 info attempt registry request try #2 at 10:19:03 AM
+435 http request GET http://chikchak.ddns.net:4873/chk2common
+436 info attempt registry request try #2 at 10:19:03 AM
+437 http request GET http://chikchak.ddns.net:4873/eureka-js-client
+438 info attempt registry request try #2 at 10:19:03 AM
+439 verbose etag "9a5274d2da057865c1e960715e18f427"
+440 http request GET http://chikchak.ddns.net:4873/typescript
+441 info attempt registry request try #2 at 10:19:03 AM
+442 http request GET http://chikchak.ddns.net:4873/cloud-config-client
+443 info attempt registry request try #2 at 10:19:03 AM
+444 http request GET http://chikchak.ddns.net:4873/@types%2fmongodb
+445 info attempt registry request try #2 at 10:19:03 AM
+446 verbose etag "2b708d7c7b0ad1e27100a0efa94a4e6e"
+447 http request GET http://chikchak.ddns.net:4873/express
+448 info attempt registry request try #2 at 10:19:03 AM
+449 http request GET http://chikchak.ddns.net:4873/@types%2fexpress
+450 info attempt registry request try #2 at 10:19:03 AM
+451 http request GET http://chikchak.ddns.net:4873/path
+452 info attempt registry request try #2 at 10:19:03 AM
+453 verbose etag "00f074a583b327b748a7863d94164691"
+454 http request GET http://chikchak.ddns.net:4873/uuid
+455 info attempt registry request try #2 at 10:19:03 AM
+456 verbose etag "a4b6783ea1207fbc1a1bb4a5197f4ac1"
+457 http request GET http://chikchak.ddns.net:4873/rxjs
+458 info attempt registry request try #2 at 10:19:03 AM
+459 http request GET http://chikchak.ddns.net:4873/@types%2fcors
+460 info attempt registry request try #2 at 10:19:03 AM
+461 http request GET http://chikchak.ddns.net:4873/routing-controllers
+462 info attempt registry request try #2 at 10:19:03 AM
+463 http request GET http://chikchak.ddns.net:4873/@types%2fbcrypt
+464 info attempt registry request try #2 at 10:19:03 AM
+465 http request GET http://chikchak.ddns.net:4873/multer
+466 info attempt registry request try #2 at 10:19:03 AM
+467 http request GET http://chikchak.ddns.net:4873/@types%2frimraf
+468 info attempt registry request try #2 at 10:19:03 AM
+469 http request GET http://chikchak.ddns.net:4873/mongoose
+470 info attempt registry request try #2 at 10:19:03 AM
+471 verbose etag "53b7ec0be14cb14e14845deaf56f6af0"
+472 http request GET http://chikchak.ddns.net:4873/body-parser
+473 info attempt registry request try #2 at 10:19:03 AM
+474 http request GET http://chikchak.ddns.net:4873/@types%2feureka-js-client
+475 info attempt registry request try #2 at 10:19:03 AM
+476 http request GET http://chikchak.ddns.net:4873/@types%2fwinston
+477 info attempt registry request try #2 at 10:19:03 AM
+478 http request GET http://chikchak.ddns.net:4873/chk2user-bridge
+479 info attempt registry request try #2 at 10:19:03 AM
+480 http request GET http://chikchak.ddns.net:4873/chk2event-client
+481 info attempt registry request try #2 at 10:19:03 AM
+482 verbose etag "f897c5ed6d0fc098a24a5d3058bd14ea"
+483 http request GET http://chikchak.ddns.net:4873/jsonwebtoken
+484 info attempt registry request try #2 at 10:19:03 AM
+485 http request GET http://chikchak.ddns.net:4873/amqplib
+486 info attempt registry request try #2 at 10:19:03 AM
+487 http request GET http://chikchak.ddns.net:4873/@types%2fmulter
+488 info attempt registry request try #2 at 10:19:03 AM
+489 http request GET http://chikchak.ddns.net:4873/@types%2fbody-parser
+490 info attempt registry request try #2 at 10:19:03 AM
+491 http request GET http://chikchak.ddns.net:4873/morgan
+492 info attempt registry request try #2 at 10:19:03 AM
+493 http request GET http://chikchak.ddns.net:4873/@types%2fmongoose
+494 info attempt registry request try #2 at 10:19:03 AM
+495 http request GET http://chikchak.ddns.net:4873/bcryptjs
+496 info attempt registry request try #2 at 10:19:03 AM
+497 verbose etag "9b6ec581b1494c366afd32f1f78e9a85"
+498 http request GET http://chikchak.ddns.net:4873/chk2global
+499 info attempt registry request try #2 at 10:19:03 AM
+500 http request GET http://chikchak.ddns.net:4873/winston
+501 info attempt registry request try #2 at 10:19:03 AM
+502 verbose etag "ec086c00b203534c6f8e5b31af4a327e"
+503 http request GET http://chikchak.ddns.net:4873/rimraf
+504 info attempt registry request try #2 at 10:19:03 AM
+505 http request GET http://chikchak.ddns.net:4873/cors
+506 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+507 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+508 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+509 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+510 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+511 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+512 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+513 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+514 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+515 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+516 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+517 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+518 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+519 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+520 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+521 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+522 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+523 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+524 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+525 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+526 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+527 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+528 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+529 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+530 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+531 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+532 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+533 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+534 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+535 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+536 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+537 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+538 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+539 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+540 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+541 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+542 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 83.44.122.148:4873
+543 info attempt registry request try #3 at 10:21:06 AM
+544 http request GET http://chikchak.ddns.net:4873/path
+545 info attempt registry request try #3 at 10:21:06 AM
+546 http request GET http://chikchak.ddns.net:4873/@types%2frx
+547 info attempt registry request try #3 at 10:21:06 AM
+548 verbose etag "9a5274d2da057865c1e960715e18f427"
+549 http request GET http://chikchak.ddns.net:4873/typescript
+550 info attempt registry request try #3 at 10:21:06 AM
+551 http request GET http://chikchak.ddns.net:4873/@types%2fexpress
+552 info attempt registry request try #3 at 10:21:06 AM
+553 http request GET http://chikchak.ddns.net:4873/mongoose
+554 info attempt registry request try #3 at 10:21:06 AM
+555 http request GET http://chikchak.ddns.net:4873/@types%2fbcrypt
+556 info attempt registry request try #3 at 10:21:06 AM
+557 http request GET http://chikchak.ddns.net:4873/chk2user-bridge
+558 info attempt registry request try #3 at 10:21:06 AM
+559 http request GET http://chikchak.ddns.net:4873/routing-controllers
+560 info attempt registry request try #3 at 10:21:06 AM
+561 http request GET http://chikchak.ddns.net:4873/@types%2fmongodb
+562 info attempt registry request try #3 at 10:21:06 AM
+563 verbose etag "2b708d7c7b0ad1e27100a0efa94a4e6e"
+564 http request GET http://chikchak.ddns.net:4873/express
+565 info attempt registry request try #3 at 10:21:06 AM
+566 http request GET http://chikchak.ddns.net:4873/bcryptjs
+567 info attempt registry request try #3 at 10:21:06 AM
+568 verbose etag "f897c5ed6d0fc098a24a5d3058bd14ea"
+569 http request GET http://chikchak.ddns.net:4873/jsonwebtoken
+570 info attempt registry request try #3 at 10:21:06 AM
+571 http request GET http://chikchak.ddns.net:4873/class-validator
+572 info attempt registry request try #3 at 10:21:06 AM
+573 http request GET http://chikchak.ddns.net:4873/@types%2fcors
+574 info attempt registry request try #3 at 10:21:06 AM
+575 http request GET http://chikchak.ddns.net:4873/chk2common
+576 info attempt registry request try #3 at 10:21:06 AM
+577 verbose etag "ec086c00b203534c6f8e5b31af4a327e"
+578 http request GET http://chikchak.ddns.net:4873/rimraf
+579 info attempt registry request try #3 at 10:21:06 AM
+580 http request GET http://chikchak.ddns.net:4873/@types%2fmulter
+581 info attempt registry request try #3 at 10:21:06 AM
+582 http request GET http://chikchak.ddns.net:4873/eureka-js-client
+583 info attempt registry request try #3 at 10:21:06 AM
+584 http request GET http://chikchak.ddns.net:4873/morgan
+585 info attempt registry request try #3 at 10:21:06 AM
+586 http request GET http://chikchak.ddns.net:4873/chk2session-bridge
+587 info attempt registry request try #3 at 10:21:06 AM
+588 verbose etag "0f586b1e1751585241c24dfc9e5c1861"
+589 http request GET http://chikchak.ddns.net:4873/inversify
+590 info attempt registry request try #3 at 10:21:06 AM
+591 http request GET http://chikchak.ddns.net:4873/@types%2fwinston
+592 info attempt registry request try #3 at 10:21:06 AM
+593 http request GET http://chikchak.ddns.net:4873/cloud-config-client
+594 info attempt registry request try #3 at 10:21:06 AM
+595 http request GET http://chikchak.ddns.net:4873/amqplib
+596 info attempt registry request try #3 at 10:21:06 AM
+597 http request GET http://chikchak.ddns.net:4873/chk2event-client
+598 info attempt registry request try #3 at 10:21:06 AM
+599 http request GET http://chikchak.ddns.net:4873/@types%2frimraf
+600 info attempt registry request try #3 at 10:21:06 AM
+601 verbose etag "3bf551de22ea0149e2d3a846a04e4e44"
+602 http request GET http://chikchak.ddns.net:4873/reflect-metadata
+603 info attempt registry request try #3 at 10:21:06 AM
+604 verbose etag "53b7ec0be14cb14e14845deaf56f6af0"
+605 http request GET http://chikchak.ddns.net:4873/body-parser
+606 info attempt registry request try #3 at 10:21:06 AM
+607 verbose etag "00f074a583b327b748a7863d94164691"
+608 http request GET http://chikchak.ddns.net:4873/uuid
+609 info attempt registry request try #3 at 10:21:06 AM
+610 http request GET http://chikchak.ddns.net:4873/@types%2fmongoose
+611 info attempt registry request try #3 at 10:21:06 AM
+612 verbose etag "9b6ec581b1494c366afd32f1f78e9a85"
+613 http request GET http://chikchak.ddns.net:4873/chk2global
+614 info attempt registry request try #3 at 10:21:06 AM
+615 verbose etag "a4b6783ea1207fbc1a1bb4a5197f4ac1"
+616 http request GET http://chikchak.ddns.net:4873/rxjs
+617 info attempt registry request try #3 at 10:21:06 AM
+618 http request GET http://chikchak.ddns.net:4873/cors
+619 info attempt registry request try #3 at 10:21:06 AM
+620 http request GET http://chikchak.ddns.net:4873/multer
+621 info attempt registry request try #3 at 10:21:06 AM
+622 http request GET http://chikchak.ddns.net:4873/@types%2feureka-js-client
+623 info attempt registry request try #3 at 10:21:06 AM
+624 http request GET http://chikchak.ddns.net:4873/winston
+625 info attempt registry request try #3 at 10:21:06 AM
+626 http request GET http://chikchak.ddns.net:4873/@types%2fbody-parser
+627 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+627 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+627 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+627 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+627 silly fetchPackageMetaData  error for chk2event-client@0.0.1 { Error: connect ECONNREFUSED 83.44.122.148:4873
+627 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+627 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+627 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+627 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+627 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+627 silly fetchPackageMetaData   syscall: 'connect',
+627 silly fetchPackageMetaData   address: '83.44.122.148',
+627 silly fetchPackageMetaData   port: 4873 }
+628 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+628 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+628 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+628 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+628 silly fetchPackageMetaData  error for path@^0.12.7 { Error: connect ECONNREFUSED 83.44.122.148:4873
+628 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+628 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+628 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+628 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+628 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+628 silly fetchPackageMetaData   syscall: 'connect',
+628 silly fetchPackageMetaData   address: '83.44.122.148',
+628 silly fetchPackageMetaData   port: 4873 }
+629 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+629 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+629 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+629 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+629 silly fetchPackageMetaData  error for @types/express@^4.16.0 { Error: connect ECONNREFUSED 83.44.122.148:4873
+629 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+629 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+629 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+629 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+629 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+629 silly fetchPackageMetaData   syscall: 'connect',
+629 silly fetchPackageMetaData   address: '83.44.122.148',
+629 silly fetchPackageMetaData   port: 4873 }
+630 silly get cb [ 304, undefined ]
+631 verbose etag http://chikchak.ddns.net:4873/rxjs from cache
+632 verbose get saving rxjs to /home/dieppa/.npm/chikchak.ddns.net_4873/rxjs/.cache.json
+633 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+633 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+633 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+633 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+633 silly fetchPackageMetaData  error for @types/winston@^2.4.4 { Error: connect ECONNREFUSED 83.44.122.148:4873
+633 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+633 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+633 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+633 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+633 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+633 silly fetchPackageMetaData   syscall: 'connect',
+633 silly fetchPackageMetaData   address: '83.44.122.148',
+633 silly fetchPackageMetaData   port: 4873 }
+634 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+634 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+634 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+634 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+634 silly fetchPackageMetaData  error for eureka-js-client@^4.4.2 { Error: connect ECONNREFUSED 83.44.122.148:4873
+634 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+634 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+634 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+634 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+634 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+634 silly fetchPackageMetaData   syscall: 'connect',
+634 silly fetchPackageMetaData   address: '83.44.122.148',
+634 silly fetchPackageMetaData   port: 4873 }
+635 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+635 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+635 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+635 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+635 silly fetchPackageMetaData  error for @types/bcrypt@^3.0.0 { Error: connect ECONNREFUSED 83.44.122.148:4873
+635 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+635 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+635 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+635 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+635 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+635 silly fetchPackageMetaData   syscall: 'connect',
+635 silly fetchPackageMetaData   address: '83.44.122.148',
+635 silly fetchPackageMetaData   port: 4873 }
+636 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+636 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+636 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+636 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+636 silly fetchPackageMetaData  error for mongoose@^5.4.1 { Error: connect ECONNREFUSED 83.44.122.148:4873
+636 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+636 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+636 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+636 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+636 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+636 silly fetchPackageMetaData   syscall: 'connect',
+636 silly fetchPackageMetaData   address: '83.44.122.148',
+636 silly fetchPackageMetaData   port: 4873 }
+637 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+637 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+637 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+637 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+637 silly fetchPackageMetaData  error for chk2user-bridge@0.0.1 { Error: connect ECONNREFUSED 83.44.122.148:4873
+637 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+637 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+637 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+637 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+637 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+637 silly fetchPackageMetaData   syscall: 'connect',
+637 silly fetchPackageMetaData   address: '83.44.122.148',
+637 silly fetchPackageMetaData   port: 4873 }
+638 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+638 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+638 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+638 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+638 silly fetchPackageMetaData  error for @types/rx@^4.1.1 { Error: connect ECONNREFUSED 83.44.122.148:4873
+638 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+638 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+638 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+638 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+638 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+638 silly fetchPackageMetaData   syscall: 'connect',
+638 silly fetchPackageMetaData   address: '83.44.122.148',
+638 silly fetchPackageMetaData   port: 4873 }
+639 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+639 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+639 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+639 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+639 silly fetchPackageMetaData  error for @types/rimraf@^2.0.2 { Error: connect ECONNREFUSED 83.44.122.148:4873
+639 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+639 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+639 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+639 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+639 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+639 silly fetchPackageMetaData   syscall: 'connect',
+639 silly fetchPackageMetaData   address: '83.44.122.148',
+639 silly fetchPackageMetaData   port: 4873 }
+640 silly get cb [ 304, undefined ]
+641 verbose etag http://chikchak.ddns.net:4873/reflect-metadata from cache
+642 verbose get saving reflect-metadata to /home/dieppa/.npm/chikchak.ddns.net_4873/reflect-metadata/.cache.json
+643 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+643 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+643 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+643 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+643 silly fetchPackageMetaData  error for amqplib@^0.5.3 { Error: connect ECONNREFUSED 83.44.122.148:4873
+643 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+643 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+643 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+643 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+643 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+643 silly fetchPackageMetaData   syscall: 'connect',
+643 silly fetchPackageMetaData   address: '83.44.122.148',
+643 silly fetchPackageMetaData   port: 4873 }
+644 silly get cb [ 304, undefined ]
+645 verbose etag http://chikchak.ddns.net:4873/typescript from cache
+646 verbose get saving typescript to /home/dieppa/.npm/chikchak.ddns.net_4873/typescript/.cache.json
+647 silly get cb [ 304, undefined ]
+648 verbose etag http://chikchak.ddns.net:4873/jsonwebtoken from cache
+649 verbose get saving jsonwebtoken to /home/dieppa/.npm/chikchak.ddns.net_4873/jsonwebtoken/.cache.json
+650 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+650 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+650 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+650 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+650 silly fetchPackageMetaData  error for chk2common@0.0.8 { Error: connect ECONNREFUSED 83.44.122.148:4873
+650 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+650 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+650 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+650 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+650 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+650 silly fetchPackageMetaData   syscall: 'connect',
+650 silly fetchPackageMetaData   address: '83.44.122.148',
+650 silly fetchPackageMetaData   port: 4873 }
+651 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+651 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+651 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+651 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+651 silly fetchPackageMetaData  error for cors@^2.8.5 { Error: connect ECONNREFUSED 83.44.122.148:4873
+651 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+651 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+651 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+651 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+651 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+651 silly fetchPackageMetaData   syscall: 'connect',
+651 silly fetchPackageMetaData   address: '83.44.122.148',
+651 silly fetchPackageMetaData   port: 4873 }
+652 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+652 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+652 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+652 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+652 silly fetchPackageMetaData  error for @types/mongodb@^3.1.18 { Error: connect ECONNREFUSED 83.44.122.148:4873
+652 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+652 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+652 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+652 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+652 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+652 silly fetchPackageMetaData   syscall: 'connect',
+652 silly fetchPackageMetaData   address: '83.44.122.148',
+652 silly fetchPackageMetaData   port: 4873 }
+653 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+653 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+653 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+653 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+653 silly fetchPackageMetaData  error for @types/multer@^1.3.7 { Error: connect ECONNREFUSED 83.44.122.148:4873
+653 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+653 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+653 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+653 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+653 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+653 silly fetchPackageMetaData   syscall: 'connect',
+653 silly fetchPackageMetaData   address: '83.44.122.148',
+653 silly fetchPackageMetaData   port: 4873 }
+654 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+654 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+654 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+654 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+654 silly fetchPackageMetaData  error for @types/body-parser@^1.17.0 { Error: connect ECONNREFUSED 83.44.122.148:4873
+654 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+654 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+654 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+654 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+654 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+654 silly fetchPackageMetaData   syscall: 'connect',
+654 silly fetchPackageMetaData   address: '83.44.122.148',
+654 silly fetchPackageMetaData   port: 4873 }
+655 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+655 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+655 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+655 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+655 silly fetchPackageMetaData  error for routing-controllers@^0.7.7 { Error: connect ECONNREFUSED 83.44.122.148:4873
+655 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+655 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+655 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+655 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+655 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+655 silly fetchPackageMetaData   syscall: 'connect',
+655 silly fetchPackageMetaData   address: '83.44.122.148',
+655 silly fetchPackageMetaData   port: 4873 }
+656 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+656 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+656 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+656 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+656 silly fetchPackageMetaData  error for morgan@^1.9.1 { Error: connect ECONNREFUSED 83.44.122.148:4873
+656 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+656 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+656 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+656 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+656 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+656 silly fetchPackageMetaData   syscall: 'connect',
+656 silly fetchPackageMetaData   address: '83.44.122.148',
+656 silly fetchPackageMetaData   port: 4873 }
+657 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+657 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+657 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+657 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+657 silly fetchPackageMetaData  error for @types/eureka-js-client@^4.4.1 { Error: connect ECONNREFUSED 83.44.122.148:4873
+657 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+657 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+657 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+657 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+657 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+657 silly fetchPackageMetaData   syscall: 'connect',
+657 silly fetchPackageMetaData   address: '83.44.122.148',
+657 silly fetchPackageMetaData   port: 4873 }
+658 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+658 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+658 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+658 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+658 silly fetchPackageMetaData  error for chk2session-bridge@0.0.1 { Error: connect ECONNREFUSED 83.44.122.148:4873
+658 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+658 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+658 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+658 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+658 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+658 silly fetchPackageMetaData   syscall: 'connect',
+658 silly fetchPackageMetaData   address: '83.44.122.148',
+658 silly fetchPackageMetaData   port: 4873 }
+659 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+659 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+659 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+659 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+659 silly fetchPackageMetaData  error for cloud-config-client@^1.4.2 { Error: connect ECONNREFUSED 83.44.122.148:4873
+659 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+659 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+659 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+659 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+659 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+659 silly fetchPackageMetaData   syscall: 'connect',
+659 silly fetchPackageMetaData   address: '83.44.122.148',
+659 silly fetchPackageMetaData   port: 4873 }
+660 silly get cb [ 304, undefined ]
+661 verbose etag http://chikchak.ddns.net:4873/body-parser from cache
+662 verbose get saving body-parser to /home/dieppa/.npm/chikchak.ddns.net_4873/body-parser/.cache.json
+663 silly get cb [ 304, undefined ]
+664 verbose etag http://chikchak.ddns.net:4873/uuid from cache
+665 verbose get saving uuid to /home/dieppa/.npm/chikchak.ddns.net_4873/uuid/.cache.json
+666 silly get cb [ 304, undefined ]
+667 verbose etag http://chikchak.ddns.net:4873/express from cache
+668 verbose get saving express to /home/dieppa/.npm/chikchak.ddns.net_4873/express/.cache.json
+669 silly get cb [ 304, undefined ]
+670 verbose etag http://chikchak.ddns.net:4873/rimraf from cache
+671 verbose get saving rimraf to /home/dieppa/.npm/chikchak.ddns.net_4873/rimraf/.cache.json
+672 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+672 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+672 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+672 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+672 silly fetchPackageMetaData  error for class-validator@^0.9.1 { Error: connect ECONNREFUSED 83.44.122.148:4873
+672 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+672 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+672 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+672 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+672 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+672 silly fetchPackageMetaData   syscall: 'connect',
+672 silly fetchPackageMetaData   address: '83.44.122.148',
+672 silly fetchPackageMetaData   port: 4873 }
+673 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+673 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+673 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+673 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+673 silly fetchPackageMetaData  error for @types/mongoose@^5.3.5 { Error: connect ECONNREFUSED 83.44.122.148:4873
+673 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+673 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+673 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+673 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+673 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+673 silly fetchPackageMetaData   syscall: 'connect',
+673 silly fetchPackageMetaData   address: '83.44.122.148',
+673 silly fetchPackageMetaData   port: 4873 }
+674 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+674 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+674 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+674 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+674 silly fetchPackageMetaData  error for winston@^3.1.0 { Error: connect ECONNREFUSED 83.44.122.148:4873
+674 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+674 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+674 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+674 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+674 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+674 silly fetchPackageMetaData   syscall: 'connect',
+674 silly fetchPackageMetaData   address: '83.44.122.148',
+674 silly fetchPackageMetaData   port: 4873 }
+675 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+675 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+675 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+675 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+675 silly fetchPackageMetaData  error for bcryptjs@^2.4.3 { Error: connect ECONNREFUSED 83.44.122.148:4873
+675 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+675 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+675 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+675 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+675 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+675 silly fetchPackageMetaData   syscall: 'connect',
+675 silly fetchPackageMetaData   address: '83.44.122.148',
+675 silly fetchPackageMetaData   port: 4873 }
+676 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+676 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+676 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+676 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+676 silly fetchPackageMetaData  error for multer@^1.4.1 { Error: connect ECONNREFUSED 83.44.122.148:4873
+676 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+676 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+676 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+676 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+676 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+676 silly fetchPackageMetaData   syscall: 'connect',
+676 silly fetchPackageMetaData   address: '83.44.122.148',
+676 silly fetchPackageMetaData   port: 4873 }
+677 silly fetchPackageMetaData Error: connect ECONNREFUSED 83.44.122.148:4873
+677 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+677 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+677 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+677 silly fetchPackageMetaData  error for @types/cors@^2.8.4 { Error: connect ECONNREFUSED 83.44.122.148:4873
+677 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+677 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+677 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+677 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+677 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+677 silly fetchPackageMetaData   syscall: 'connect',
+677 silly fetchPackageMetaData   address: '83.44.122.148',
+677 silly fetchPackageMetaData   port: 4873 }
+678 silly get cb [ 304, undefined ]
+679 verbose etag http://chikchak.ddns.net:4873/inversify from cache
+680 verbose get saving inversify to /home/dieppa/.npm/chikchak.ddns.net_4873/inversify/.cache.json
+681 silly get cb [ 304, undefined ]
+682 verbose etag http://chikchak.ddns.net:4873/chk2global from cache
+683 verbose get saving chk2global to /home/dieppa/.npm/chikchak.ddns.net_4873/chk2global/.cache.json
+684 silly resolveWithNewModule jsonwebtoken@8.5.1 checking installable status
+685 silly cache add args [ 'jsonwebtoken@^8.4.0', null ]
+686 verbose cache add spec jsonwebtoken@^8.4.0
+687 silly cache add parsed spec Result {
+687 silly cache add   raw: 'jsonwebtoken@^8.4.0',
+687 silly cache add   scope: null,
+687 silly cache add   name: 'jsonwebtoken',
+687 silly cache add   rawSpec: '^8.4.0',
+687 silly cache add   spec: '>=8.4.0 <9.0.0',
+687 silly cache add   type: 'range' }
+688 silly addNamed jsonwebtoken@>=8.4.0 <9.0.0
+689 verbose addNamed ">=8.4.0 <9.0.0" is a valid semver range for jsonwebtoken
+690 silly addNameRange { name: 'jsonwebtoken', range: '>=8.4.0 <9.0.0', hasData: false }
+691 silly mapToRegistry name jsonwebtoken
+692 silly mapToRegistry using default registry
+693 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+694 silly mapToRegistry uri http://chikchak.ddns.net:4873/jsonwebtoken
+695 verbose addNameRange registry:http://chikchak.ddns.net:4873/jsonwebtoken not in flight; fetching
+696 silly resolveWithNewModule uuid@3.3.3 checking installable status
+697 silly cache add args [ 'uuid@^3.3.2', null ]
+698 verbose cache add spec uuid@^3.3.2
+699 silly cache add parsed spec Result {
+699 silly cache add   raw: 'uuid@^3.3.2',
+699 silly cache add   scope: null,
+699 silly cache add   name: 'uuid',
+699 silly cache add   rawSpec: '^3.3.2',
+699 silly cache add   spec: '>=3.3.2 <4.0.0',
+699 silly cache add   type: 'range' }
+700 silly addNamed uuid@>=3.3.2 <4.0.0
+701 verbose addNamed ">=3.3.2 <4.0.0" is a valid semver range for uuid
+702 silly addNameRange { name: 'uuid', range: '>=3.3.2 <4.0.0', hasData: false }
+703 silly mapToRegistry name uuid
+704 silly mapToRegistry using default registry
+705 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+706 silly mapToRegistry uri http://chikchak.ddns.net:4873/uuid
+707 verbose addNameRange registry:http://chikchak.ddns.net:4873/uuid not in flight; fetching
+708 silly resolveWithNewModule rxjs@6.5.3 checking installable status
+709 silly cache add args [ 'rxjs@^6.3.3', null ]
+710 verbose cache add spec rxjs@^6.3.3
+711 silly cache add parsed spec Result {
+711 silly cache add   raw: 'rxjs@^6.3.3',
+711 silly cache add   scope: null,
+711 silly cache add   name: 'rxjs',
+711 silly cache add   rawSpec: '^6.3.3',
+711 silly cache add   spec: '>=6.3.3 <7.0.0',
+711 silly cache add   type: 'range' }
+712 silly addNamed rxjs@>=6.3.3 <7.0.0
+713 verbose addNamed ">=6.3.3 <7.0.0" is a valid semver range for rxjs
+714 silly addNameRange { name: 'rxjs', range: '>=6.3.3 <7.0.0', hasData: false }
+715 silly mapToRegistry name rxjs
+716 silly mapToRegistry using default registry
+717 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+718 silly mapToRegistry uri http://chikchak.ddns.net:4873/rxjs
+719 verbose addNameRange registry:http://chikchak.ddns.net:4873/rxjs not in flight; fetching
+720 silly resolveWithNewModule rimraf@2.7.1 checking installable status
+721 silly cache add args [ 'rimraf@^2.6.2', null ]
+722 verbose cache add spec rimraf@^2.6.2
+723 silly cache add parsed spec Result {
+723 silly cache add   raw: 'rimraf@^2.6.2',
+723 silly cache add   scope: null,
+723 silly cache add   name: 'rimraf',
+723 silly cache add   rawSpec: '^2.6.2',
+723 silly cache add   spec: '>=2.6.2 <3.0.0',
+723 silly cache add   type: 'range' }
+724 silly addNamed rimraf@>=2.6.2 <3.0.0
+725 verbose addNamed ">=2.6.2 <3.0.0" is a valid semver range for rimraf
+726 silly addNameRange { name: 'rimraf', range: '>=2.6.2 <3.0.0', hasData: false }
+727 silly mapToRegistry name rimraf
+728 silly mapToRegistry using default registry
+729 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+730 silly mapToRegistry uri http://chikchak.ddns.net:4873/rimraf
+731 verbose addNameRange registry:http://chikchak.ddns.net:4873/rimraf not in flight; fetching
+732 silly resolveWithNewModule body-parser@1.19.0 checking installable status
+733 silly cache add args [ 'body-parser@^1.18.3', null ]
+734 verbose cache add spec body-parser@^1.18.3
+735 silly cache add parsed spec Result {
+735 silly cache add   raw: 'body-parser@^1.18.3',
+735 silly cache add   scope: null,
+735 silly cache add   name: 'body-parser',
+735 silly cache add   rawSpec: '^1.18.3',
+735 silly cache add   spec: '>=1.18.3 <2.0.0',
+735 silly cache add   type: 'range' }
+736 silly addNamed body-parser@>=1.18.3 <2.0.0
+737 verbose addNamed ">=1.18.3 <2.0.0" is a valid semver range for body-parser
+738 silly addNameRange { name: 'body-parser', range: '>=1.18.3 <2.0.0', hasData: false }
+739 silly mapToRegistry name body-parser
+740 silly mapToRegistry using default registry
+741 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+742 silly mapToRegistry uri http://chikchak.ddns.net:4873/body-parser
+743 verbose addNameRange registry:http://chikchak.ddns.net:4873/body-parser not in flight; fetching
+744 silly resolveWithNewModule chk2global@0.0.3 checking installable status
+745 silly cache add args [ 'chk2global@0.0.3', null ]
+746 verbose cache add spec chk2global@0.0.3
+747 silly cache add parsed spec Result {
+747 silly cache add   raw: 'chk2global@0.0.3',
+747 silly cache add   scope: null,
+747 silly cache add   name: 'chk2global',
+747 silly cache add   rawSpec: '0.0.3',
+747 silly cache add   spec: '0.0.3',
+747 silly cache add   type: 'version' }
+748 silly addNamed chk2global@0.0.3
+749 verbose addNamed "0.0.3" is a plain semver version for chk2global
+750 silly mapToRegistry name chk2global
+751 silly mapToRegistry using default registry
+752 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+753 silly mapToRegistry uri http://chikchak.ddns.net:4873/chk2global
+754 verbose addNameVersion registry:http://chikchak.ddns.net:4873/chk2global not in flight; fetching
+755 silly resolveWithNewModule inversify@5.0.1 checking installable status
+756 silly cache add args [ 'inversify@^5.0.1', null ]
+757 verbose cache add spec inversify@^5.0.1
+758 silly cache add parsed spec Result {
+758 silly cache add   raw: 'inversify@^5.0.1',
+758 silly cache add   scope: null,
+758 silly cache add   name: 'inversify',
+758 silly cache add   rawSpec: '^5.0.1',
+758 silly cache add   spec: '>=5.0.1 <6.0.0',
+758 silly cache add   type: 'range' }
+759 silly addNamed inversify@>=5.0.1 <6.0.0
+760 verbose addNamed ">=5.0.1 <6.0.0" is a valid semver range for inversify
+761 silly addNameRange { name: 'inversify', range: '>=5.0.1 <6.0.0', hasData: false }
+762 silly mapToRegistry name inversify
+763 silly mapToRegistry using default registry
+764 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+765 silly mapToRegistry uri http://chikchak.ddns.net:4873/inversify
+766 verbose addNameRange registry:http://chikchak.ddns.net:4873/inversify not in flight; fetching
+767 silly resolveWithNewModule express@4.17.1 checking installable status
+768 silly cache add args [ 'express@^4.16.4', null ]
+769 verbose cache add spec express@^4.16.4
+770 silly cache add parsed spec Result {
+770 silly cache add   raw: 'express@^4.16.4',
+770 silly cache add   scope: null,
+770 silly cache add   name: 'express',
+770 silly cache add   rawSpec: '^4.16.4',
+770 silly cache add   spec: '>=4.16.4 <5.0.0',
+770 silly cache add   type: 'range' }
+771 silly addNamed express@>=4.16.4 <5.0.0
+772 verbose addNamed ">=4.16.4 <5.0.0" is a valid semver range for express
+773 silly addNameRange { name: 'express', range: '>=4.16.4 <5.0.0', hasData: false }
+774 silly mapToRegistry name express
+775 silly mapToRegistry using default registry
+776 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+777 silly mapToRegistry uri http://chikchak.ddns.net:4873/express
+778 verbose addNameRange registry:http://chikchak.ddns.net:4873/express not in flight; fetching
+779 silly resolveWithNewModule typescript@3.6.2 checking installable status
+780 silly cache add args [ 'typescript@^3.2.2', null ]
+781 verbose cache add spec typescript@^3.2.2
+782 silly cache add parsed spec Result {
+782 silly cache add   raw: 'typescript@^3.2.2',
+782 silly cache add   scope: null,
+782 silly cache add   name: 'typescript',
+782 silly cache add   rawSpec: '^3.2.2',
+782 silly cache add   spec: '>=3.2.2 <4.0.0',
+782 silly cache add   type: 'range' }
+783 silly addNamed typescript@>=3.2.2 <4.0.0
+784 verbose addNamed ">=3.2.2 <4.0.0" is a valid semver range for typescript
+785 silly addNameRange { name: 'typescript', range: '>=3.2.2 <4.0.0', hasData: false }
+786 silly mapToRegistry name typescript
+787 silly mapToRegistry using default registry
+788 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+789 silly mapToRegistry uri http://chikchak.ddns.net:4873/typescript
+790 verbose addNameRange registry:http://chikchak.ddns.net:4873/typescript not in flight; fetching
+791 silly resolveWithNewModule reflect-metadata@0.1.13 checking installable status
+792 silly cache add args [ 'reflect-metadata@^0.1.12', null ]
+793 verbose cache add spec reflect-metadata@^0.1.12
+794 silly cache add parsed spec Result {
+794 silly cache add   raw: 'reflect-metadata@^0.1.12',
+794 silly cache add   scope: null,
+794 silly cache add   name: 'reflect-metadata',
+794 silly cache add   rawSpec: '^0.1.12',
+794 silly cache add   spec: '>=0.1.12 <0.2.0',
+794 silly cache add   type: 'range' }
+795 silly addNamed reflect-metadata@>=0.1.12 <0.2.0
+796 verbose addNamed ">=0.1.12 <0.2.0" is a valid semver range for reflect-metadata
+797 silly addNameRange { name: 'reflect-metadata',
+797 silly addNameRange   range: '>=0.1.12 <0.2.0',
+797 silly addNameRange   hasData: false }
+798 silly mapToRegistry name reflect-metadata
+799 silly mapToRegistry using default registry
+800 silly mapToRegistry registry http://chikchak.ddns.net:4873/
+801 silly mapToRegistry uri http://chikchak.ddns.net:4873/reflect-metadata
+802 verbose addNameRange registry:http://chikchak.ddns.net:4873/reflect-metadata not in flight; fetching
+803 verbose get http://chikchak.ddns.net:4873/uuid not expired, no request
+804 silly addNameRange number 2 { name: 'uuid', range: '>=3.3.2 <4.0.0', hasData: true }
+805 silly addNameRange versions [ 'uuid',
+805 silly addNameRange   [ '0.0.1',
+805 silly addNameRange     '0.0.2',
+805 silly addNameRange     '1.4.0',
+805 silly addNameRange     '1.4.1',
+805 silly addNameRange     '1.4.2',
+805 silly addNameRange     '2.0.0',
+805 silly addNameRange     '2.0.1',
+805 silly addNameRange     '2.0.2',
+805 silly addNameRange     '2.0.3',
+805 silly addNameRange     '3.0.0',
+805 silly addNameRange     '3.0.1',
+805 silly addNameRange     '3.1.0',
+805 silly addNameRange     '3.2.0',
+805 silly addNameRange     '3.2.1',
+805 silly addNameRange     '3.3.0',
+805 silly addNameRange     '3.3.2',
+805 silly addNameRange     '3.3.3' ] ]
+806 silly addNamed uuid@3.3.3
+807 verbose addNamed "3.3.3" is a plain semver version for uuid
+808 verbose get http://chikchak.ddns.net:4873/rimraf not expired, no request
+809 silly addNameRange number 2 { name: 'rimraf', range: '>=2.6.2 <3.0.0', hasData: true }
+810 silly addNameRange versions [ 'rimraf',
+810 silly addNameRange   [ '1.0.0',
+810 silly addNameRange     '1.0.1',
+810 silly addNameRange     '1.0.2',
+810 silly addNameRange     '1.0.4',
+810 silly addNameRange     '1.0.5',
+810 silly addNameRange     '1.0.6',
+810 silly addNameRange     '1.0.7',
+810 silly addNameRange     '1.0.8',
+810 silly addNameRange     '1.0.9',
+810 silly addNameRange     '2.0.0',
+810 silly addNameRange     '2.0.1',
+810 silly addNameRange     '2.0.2',
+810 silly addNameRange     '2.0.3',
+810 silly addNameRange     '2.1.0',
+810 silly addNameRange     '2.1.1',
+810 silly addNameRange     '2.1.2',
+810 silly addNameRange     '2.1.3',
+810 silly addNameRange     '2.1.4',
+810 silly addNameRange     '2.2.0',
+810 silly addNameRange     '2.2.1',
+810 silly addNameRange     '2.2.2',
+810 silly addNameRange     '2.2.3',
+810 silly addNameRange     '2.2.4',
+810 silly addNameRange     '2.2.5',
+810 silly addNameRange     '2.2.6',
+810 silly addNameRange     '2.2.8',
+810 silly addNameRange     '2.3.0',
+810 silly addNameRange     '2.3.1',
+810 silly addNameRange     '2.3.2',
+810 silly addNameRange     '2.3.3',
+810 silly addNameRange     '2.3.4',
+810 silly addNameRange     '2.4.0',
+810 silly addNameRange     '2.4.1',
+810 silly addNameRange     '2.4.2',
+810 silly addNameRange     '2.4.3',
+810 silly addNameRange     '2.4.4',
+810 silly addNameRange     '2.4.5',
+810 silly addNameRange     '2.5.0',
+810 silly addNameRange     '2.5.1',
+810 silly addNameRange     '2.5.2',
+810 silly addNameRange     '2.5.3',
+810 silly addNameRange     '2.5.4',
+810 silly addNameRange     '2.6.0',
+810 silly addNameRange     '2.6.1',
+810 silly addNameRange     '2.6.2',
+810 silly addNameRange     '2.6.3',
+810 silly addNameRange     '2.7.0',
+810 silly addNameRange     '2.7.1',
+810 silly addNameRange     '3.0.0' ] ]
+811 silly addNamed rimraf@2.7.1
+812 verbose addNamed "2.7.1" is a plain semver version for rimraf
+813 verbose get http://chikchak.ddns.net:4873/jsonwebtoken not expired, no request
+814 silly addNameRange number 2 { name: 'jsonwebtoken', range: '>=8.4.0 <9.0.0', hasData: true }
+815 silly addNameRange versions [ 'jsonwebtoken',
+815 silly addNameRange   [ '0.1.0',
+815 silly addNameRange     '0.2.0',
+815 silly addNameRange     '0.3.0',
+815 silly addNameRange     '0.4.0',
+815 silly addNameRange     '0.4.1',
+815 silly addNameRange     '1.0.0',
+815 silly addNameRange     '1.0.2',
+815 silly addNameRange     '1.1.0',
+815 silly addNameRange     '1.1.1',
+815 silly addNameRange     '1.1.2',
+815 silly addNameRange     '1.2.0',
+815 silly addNameRange     '1.3.0',
+815 silly addNameRange     '2.0.0',
+815 silly addNameRange     '3.0.0',
+815 silly addNameRange     '3.1.0',
+815 silly addNameRange     '3.1.1',
+815 silly addNameRange     '3.2.0',
+815 silly addNameRange     '3.2.1',
+815 silly addNameRange     '3.2.2',
+815 silly addNameRange     '4.0.0',
+815 silly addNameRange     '4.1.0',
+815 silly addNameRange     '4.2.0',
+815 silly addNameRange     '4.2.1',
+815 silly addNameRange     '4.2.2',
+815 silly addNameRange     '5.0.0',
+815 silly addNameRange     '5.0.1',
+815 silly addNameRange     '5.0.2',
+815 silly addNameRange     '5.0.3',
+815 silly addNameRange     '5.0.4',
+815 silly addNameRange     '5.0.5',
+815 silly addNameRange     '5.1.0',
+815 silly addNameRange     '5.2.0',
+815 silly addNameRange     '5.3.1',
+815 silly addNameRange     '5.4.0',
+815 silly addNameRange     '5.4.1',
+815 silly addNameRange     '5.5.0',
+815 silly addNameRange     '5.5.1',
+815 silly addNameRange     '5.5.2',
+815 silly addNameRange     '5.5.3',
+815 silly addNameRange     '5.5.4',
+815 silly addNameRange     '5.6.0',
+815 silly addNameRange     '5.6.2',
+815 silly addNameRange     '5.7.0',
+815 silly addNameRange     '6.0.0',
+815 silly addNameRange     '6.0.1',
+815 silly addNameRange     '6.1.0',
+815 silly addNameRange     '6.1.1',
+815 silly addNameRange     '6.1.2',
+815 silly addNameRange     '6.2.0',
+815 silly addNameRange     '7.0.0',
+815 silly addNameRange     '7.0.1',
+815 silly addNameRange     '7.1.0',
+815 silly addNameRange     '7.1.1',
+815 silly addNameRange     '7.1.3',
+815 silly addNameRange     '7.1.5',
+815 silly addNameRange     '7.1.6',
+815 silly addNameRange     '7.1.7',
+815 silly addNameRange     '7.1.8',
+815 silly addNameRange     '7.1.9',
+815 silly addNameRange     '7.1.10',
+815 silly addNameRange     '7.2.0',
+815 silly addNameRange     '7.2.1',
+815 silly addNameRange     '7.3.0',
+815 silly addNameRange     '7.4.0',
+815 silly addNameRange     '7.4.1',
+815 silly addNameRange     '7.4.2',
+815 silly addNameRange     '7.4.3',
+815 silly addNameRange     '8.0.0',
+815 silly addNameRange     '8.0.1',
+815 silly addNameRange     '8.1.0',
+815 silly addNameRange     '8.1.1',
+815 silly addNameRange     '8.2.0',
+815 silly addNameRange     '8.2.1',
+815 silly addNameRange     '8.2.2',
+815 silly addNameRange     '8.3.0',
+815 silly addNameRange     '8.4.0',
+815 silly addNameRange     '8.5.0',
+815 silly addNameRange     '8.5.1' ] ]
+816 silly addNamed jsonwebtoken@8.5.1
+817 verbose addNamed "8.5.1" is a plain semver version for jsonwebtoken
+818 verbose get http://chikchak.ddns.net:4873/chk2global not expired, no request
+819 verbose get http://chikchak.ddns.net:4873/body-parser not expired, no request
+820 silly addNameRange number 2 { name: 'body-parser', range: '>=1.18.3 <2.0.0', hasData: true }
+821 silly addNameRange versions [ 'body-parser',
+821 silly addNameRange   [ '1.0.0',
+821 silly addNameRange     '1.0.1',
+821 silly addNameRange     '1.0.2',
+821 silly addNameRange     '1.1.0',
+821 silly addNameRange     '1.1.1',
+821 silly addNameRange     '1.1.2',
+821 silly addNameRange     '1.2.0',
+821 silly addNameRange     '1.2.1',
+821 silly addNameRange     '1.2.2',
+821 silly addNameRange     '1.3.0',
+821 silly addNameRange     '1.3.1',
+821 silly addNameRange     '1.4.0',
+821 silly addNameRange     '1.4.1',
+821 silly addNameRange     '1.4.2',
+821 silly addNameRange     '1.4.3',
+821 silly addNameRange     '1.5.0',
+821 silly addNameRange     '1.5.1',
+821 silly addNameRange     '1.5.2',
+821 silly addNameRange     '1.6.0',
+821 silly addNameRange     '1.6.1',
+821 silly addNameRange     '1.6.2',
+821 silly addNameRange     '1.6.3',
+821 silly addNameRange     '1.6.4',
+821 silly addNameRange     '1.6.5',
+821 silly addNameRange     '1.6.6',
+821 silly addNameRange     '1.6.7',
+821 silly addNameRange     '1.7.0',
+821 silly addNameRange     '1.8.0',
+821 silly addNameRange     '1.8.1',
+821 silly addNameRange     '1.8.2',
+821 silly addNameRange     '1.8.3',
+821 silly addNameRange     '1.8.4',
+821 silly addNameRange     '1.9.0',
+821 silly addNameRange     '1.9.1',
+821 silly addNameRange     '1.9.2',
+821 silly addNameRange     '1.9.3',
+821 silly addNameRange     '1.10.0',
+821 silly addNameRange     '1.10.1',
+821 silly addNameRange     '1.10.2',
+821 silly addNameRange     '1.11.0',
+821 silly addNameRange     '1.12.0',
+821 silly addNameRange     '1.12.1',
+821 silly addNameRange     '1.12.2',
+821 silly addNameRange     '1.12.3',
+821 silly addNameRange     '1.12.4',
+821 silly addNameRange     '1.13.0',
+821 silly addNameRange     '1.13.1',
+821 silly addNameRange     '1.13.2',
+821 silly addNameRange     '1.13.3',
+821 silly addNameRange     '1.14.0',
+821 silly addNameRange     '1.14.1',
+821 silly addNameRange     '1.14.2',
+821 silly addNameRange     '1.15.0',
+821 silly addNameRange     '1.15.1',
+821 silly addNameRange     '1.15.2',
+821 silly addNameRange     '1.16.0',
+821 silly addNameRange     '1.16.1',
+821 silly addNameRange     '1.17.0',
+821 silly addNameRange     '1.17.1',
+821 silly addNameRange     '1.17.2',
+821 silly addNameRange     '1.18.0',
+821 silly addNameRange     '1.18.1',
+821 silly addNameRange     '1.18.2',
+821 silly addNameRange     '1.18.3',
+821 silly addNameRange     '1.19.0' ] ]
+822 silly addNamed body-parser@1.19.0
+823 verbose addNamed "1.19.0" is a plain semver version for body-parser
+824 verbose get http://chikchak.ddns.net:4873/rxjs not expired, no request
+825 silly addNameRange number 2 { name: 'rxjs', range: '>=6.3.3 <7.0.0', hasData: true }
+826 silly addNameRange versions [ 'rxjs',
+826 silly addNameRange   [ '5.0.0-alpha.10',
+826 silly addNameRange     '5.0.0-alpha.11',
+826 silly addNameRange     '5.0.0-alpha.12',
+826 silly addNameRange     '5.0.0-alpha.13',
+826 silly addNameRange     '5.0.0-alpha.14',
+826 silly addNameRange     '5.0.0-beta.0',
+826 silly addNameRange     '5.0.0-beta.1',
+826 silly addNameRange     '5.0.0-beta.2',
+826 silly addNameRange     '5.0.0-beta.3',
+826 silly addNameRange     '5.0.0-beta.4',
+826 silly addNameRange     '5.0.0-beta.5',
+826 silly addNameRange     '5.0.0-beta.6',
+826 silly addNameRange     '5.0.0-beta.7',
+826 silly addNameRange     '5.0.0-beta.8',
+826 silly addNameRange     '5.0.0-beta.9',
+826 silly addNameRange     '5.0.0-beta.10',
+826 silly addNameRange     '5.0.0-beta.11',
+826 silly addNameRange     '5.0.0-beta.12',
+826 silly addNameRange     '5.0.0-rc.1',
+826 silly addNameRange     '5.0.0-rc.2',
+826 silly addNameRange     '5.0.0-rc.3',
+826 silly addNameRange     '5.0.0-rc.4',
+826 silly addNameRange     '5.0.0-rc.5',
+826 silly addNameRange     '5.0.0',
+826 silly addNameRange     '5.0.1',
+826 silly addNameRange     '5.0.2',
+826 silly addNameRange     '5.0.3',
+826 silly addNameRange     '5.1.0',
+826 silly addNameRange     '5.1.1',
+826 silly addNameRange     '5.2.0',
+826 silly addNameRange     '5.2.1-smooth',
+826 silly addNameRange     '5.3.0',
+826 silly addNameRange     '5.3.1',
+826 silly addNameRange     '5.3.3',
+826 silly addNameRange     '5.4.0',
+826 silly addNameRange     '5.4.1',
+826 silly addNameRange     '6.0.0-alpha.0',
+826 silly addNameRange     '5.4.2',
+826 silly addNameRange     '5.4.3',
+826 silly addNameRange     '5.5.0-beta.0',
+826 silly addNameRange     '5.5.0-beta.1',
+826 silly addNameRange     '5.5.0-beta.2',
+826 silly addNameRange     '5.5.0-beta.3',
+826 silly addNameRange     '5.5.0-beta.4',
+826 silly addNameRange     '5.5.0-beta.5',
+826 silly addNameRange     '5.5.0-beta.7',
+826 silly addNameRange     '5.5.0',
+826 silly addNameRange     '5.5.1',
+826 silly addNameRange     '5.5.2',
+826 silly addNameRange     '5.5.3',
+826 silly addNameRange     '5.5.4',
+826 silly addNameRange     '5.5.5',
+826 silly addNameRange     '5.5.6',
+826 silly addNameRange     '6.0.0-alpha.1',
+826 silly addNameRange     '6.0.0-alpha.2',
+826 silly addNameRange     '6.0.0-alpha.3',
+826 silly addNameRange     '5.5.7',
+826 silly addNameRange     '6.0.0-alpha.4',
+826 silly addNameRange     '6.0.0-beta.0',
+826 silly addNameRange     '5.6.0-forward-compat.0',
+826 silly addNameRange     '6.0.0-beta.1',
+826 silly addNameRange     '6.0.0-beta.2',
+826 silly addNameRange     '5.6.0-forward-compat.1',
+826 silly addNameRange     '6.0.0-beta.3',
+826 silly addNameRange     '5.5.8',
+826 silly addNameRange     '5.6.0-forward-compat.2',
+826 silly addNameRange     '6.0.0-beta.4',
+826 silly addNameRange     '6.0.0-rc.0',
+826 silly addNameRange     '6.0.0-smoosh.0',
+826 silly addNameRange     '6.0.0-smoosh.1',
+826 silly addNameRange     '6.0.0-smoosh.2',
+826 silly addNameRange     '6.0.0-rc.1',
+826 silly addNameRange     '6.0.0-tactical-rc.1',
+826 silly addNameRange     '5.5.9',
+826 silly addNameRange     '5.6.0-forward-compat.3',
+826 silly addNameRange     '6.0.0-tenacious-rc.2',
+826 silly addNameRange     '6.0.0-terrific-rc.3',
+826 silly addNameRange     '6.0.0-turbo-rc.4',
+826 silly addNameRange     '5.5.10',
+826 silly addNameRange     '5.6.0-forward-compat.4',
+826 silly addNameRange     '6.0.0-uber-rc.5',
+826 silly addNameRange     '6.0.0-ucandoit-rc.6',
+826 silly addNameRange     '6.0.0-uncanny-rc.7',
+826 silly addNameRange     '6.0.0',
+826 silly addNameRange     '6.1.0',
+826 silly addNameRange     '6.2.0',
+826 silly addNameRange     '5.5.11',
+826 silly addNameRange     '5.6.0-forward-compat.5',
+826 silly addNameRange     '6.2.1',
+826 silly addNameRange     '6.2.2',
+826 silly addNameRange     '6.3.0',
+826 silly addNameRange     '5.5.12',
+826 silly addNameRange     '6.3.1',
+826 silly addNameRange     '6.3.2',
+826 silly addNameRange     '6.3.3',
+826 silly addNameRange     '6.4.0',
+826 silly addNameRange     '6.5.0',
+826 silly addNameRange     '6.5.1',
+826 silly addNameRange     '6.5.2',
+826 silly addNameRange     '6.5.3' ] ]
+827 silly addNamed rxjs@6.5.3
+828 verbose addNamed "6.5.3" is a plain semver version for rxjs
+829 verbose get http://chikchak.ddns.net:4873/inversify not expired, no request
+830 silly addNameRange number 2 { name: 'inversify', range: '>=5.0.1 <6.0.0', hasData: true }
+831 silly addNameRange versions [ 'inversify',
+831 silly addNameRange   [ '0.0.1',
+831 silly addNameRange     '0.0.2',
+831 silly addNameRange     '0.0.4',
+831 silly addNameRange     '0.0.5',
+831 silly addNameRange     '0.0.6',
+831 silly addNameRange     '0.0.7',
+831 silly addNameRange     '1.0.0',
+831 silly addNameRange     '1.0.1',
+831 silly addNameRange     '1.0.2',
+831 silly addNameRange     '1.0.3',
+831 silly addNameRange     '1.2.0',
+831 silly addNameRange     '1.2.1',
+831 silly addNameRange     '1.2.2',
+831 silly addNameRange     '1.3.0',
+831 silly addNameRange     '1.3.1',
+831 silly addNameRange     '2.0.0-alpha.0',
+831 silly addNameRange     '2.0.0-alpha.1',
+831 silly addNameRange     '2.0.0-alpha.2',
+831 silly addNameRange     '2.0.0-alpha.3',
+831 silly addNameRange     '2.0.0-alpha.4',
+831 silly addNameRange     '2.0.0-alpha.5',
+831 silly addNameRange     '2.0.0-alpha.6',
+831 silly addNameRange     '2.0.0-alpha.8',
+831 silly addNameRange     '2.0.0-beta.1',
+831 silly addNameRange     '2.0.0-beta.2',
+831 silly addNameRange     '2.0.0-beta.3',
+831 silly addNameRange     '2.0.0-beta.4',
+831 silly addNameRange     '2.0.0-beta.5',
+831 silly addNameRange     '2.0.0-beta.6',
+831 silly addNameRange     '2.0.0-beta.7',
+831 silly addNameRange     '2.0.0-beta.8',
+831 silly addNameRange     '2.0.0-beta.9',
+831 silly addNameRange     '2.0.0-beta.10',
+831 silly addNameRange     '2.0.0-rc.1',
+831 silly addNameRange     '2.0.0-rc.5',
+831 silly addNameRange     '2.0.0-rc.9',
+831 silly addNameRange     '2.0.0-rc.10',
+831 silly addNameRange     '2.0.0-rc.11',
+831 silly addNameRange     '2.0.0-rc.12',
+831 silly addNameRange     '2.0.0-rc.13',
+831 silly addNameRange     '2.0.0-rc.14',
+831 silly addNameRange     '2.0.0',
+831 silly addNameRange     '2.0.1',
+831 silly addNameRange     '3.0.0-beta.1',
+831 silly addNameRange     '3.0.0-beta.2',
+831 silly addNameRange     '3.0.0-beta.3',
+831 silly addNameRange     '3.0.0-rc.1',
+831 silly addNameRange     '3.0.0-rc.2',
+831 silly addNameRange     '3.0.0-rc.4',
+831 silly addNameRange     '3.0.0',
+831 silly addNameRange     '3.1.0',
+831 silly addNameRange     '3.2.0',
+831 silly addNameRange     '3.3.0',
+831 silly addNameRange     '4.0.0',
+831 silly addNameRange     '4.1.0',
+831 silly addNameRange     '4.1.1',
+831 silly addNameRange     '4.2.0',
+831 silly addNameRange     '4.3.0',
+831 silly addNameRange     '4.4.0',
+831 silly addNameRange     '4.5.0',
+831 silly addNameRange     '4.5.1',
+831 silly addNameRange     '4.5.2',
+831 silly addNameRange     '4.6.0',
+831 silly addNameRange     '4.6.1',
+831 silly addNameRange     '4.7.0',
+831 silly addNameRange     '4.8.0',
+831 silly addNameRange     '4.9.0',
+831 silly addNameRange     '4.10.0',
+831 silly addNameRange     '4.11.0',
+831 silly addNameRange     '4.11.1',
+831 silly addNameRange     '4.13.0',
+831 silly addNameRange     '4.14.0',
+831 silly addNameRange     '5.0.1' ] ]
+832 silly addNamed inversify@5.0.1
+833 verbose addNamed "5.0.1" is a plain semver version for inversify
+834 verbose get http://chikchak.ddns.net:4873/express not expired, no request
+835 silly addNameRange number 2 { name: 'express', range: '>=4.16.4 <5.0.0', hasData: true }
+836 silly addNameRange versions [ 'express',
+836 silly addNameRange   [ '0.14.0',
+836 silly addNameRange     '0.14.1',
+836 silly addNameRange     '1.0.0',
+836 silly addNameRange     '1.0.1',
+836 silly addNameRange     '1.0.2',
+836 silly addNameRange     '1.0.3',
+836 silly addNameRange     '1.0.4',
+836 silly addNameRange     '1.0.5',
+836 silly addNameRange     '1.0.6',
+836 silly addNameRange     '1.0.7',
+836 silly addNameRange     '1.0.8',
+836 silly addNameRange     '2.0.0',
+836 silly addNameRange     '2.1.0',
+836 silly addNameRange     '2.1.1',
+836 silly addNameRange     '2.2.0',
+836 silly addNameRange     '2.2.1',
+836 silly addNameRange     '2.2.2',
+836 silly addNameRange     '2.3.0',
+836 silly addNameRange     '2.3.1',
+836 silly addNameRange     '2.3.2',
+836 silly addNameRange     '2.3.3',
+836 silly addNameRange     '2.3.4',
+836 silly addNameRange     '2.3.5',
+836 silly addNameRange     '2.3.6',
+836 silly addNameRange     '2.3.7',
+836 silly addNameRange     '2.3.8',
+836 silly addNameRange     '2.3.9',
+836 silly addNameRange     '2.3.10',
+836 silly addNameRange     '2.3.11',
+836 silly addNameRange     '2.3.12',
+836 silly addNameRange     '2.4.0',
+836 silly addNameRange     '2.4.1',
+836 silly addNameRange     '2.4.2',
+836 silly addNameRange     '2.4.3',
+836 silly addNameRange     '2.4.4',
+836 silly addNameRange     '2.4.5',
+836 silly addNameRange     '2.4.6',
+836 silly addNameRange     '2.4.7',
+836 silly addNameRange     '2.5.0',
+836 silly addNameRange     '2.5.1',
+836 silly addNameRange     '2.5.2',
+836 silly addNameRange     '2.5.3',
+836 silly addNameRange     '2.5.4',
+836 silly addNameRange     '2.5.5',
+836 silly addNameRange     '2.5.6',
+836 silly addNameRange     '2.5.7',
+836 silly addNameRange     '2.5.8',
+836 silly addNameRange     '2.5.9',
+836 silly addNameRange     '2.5.10',
+836 silly addNameRange     '2.5.11',
+836 silly addNameRange     '3.0.0',
+836 silly addNameRange     '3.0.1',
+836 silly addNameRange     '3.0.2',
+836 silly addNameRange     '3.0.3',
+836 silly addNameRange     '3.0.4',
+836 silly addNameRange     '3.0.5',
+836 silly addNameRange     '3.0.6',
+836 silly addNameRange     '3.1.0',
+836 silly addNameRange     '3.1.1',
+836 silly addNameRange     '3.1.2',
+836 silly addNameRange     '3.2.0',
+836 silly addNameRange     '3.2.1',
+836 silly addNameRange     '3.2.2',
+836 silly addNameRange     '3.2.3',
+836 silly addNameRange     '3.2.4',
+836 silly addNameRange     '3.2.5',
+836 silly addNameRange     '3.2.6',
+836 silly addNameRange     '3.3.0',
+836 silly addNameRange     '3.3.1',
+836 silly addNameRange     '3.3.2',
+836 silly addNameRange     '3.3.3',
+836 silly addNameRange     '3.3.4',
+836 silly addNameRange     '3.3.5',
+836 silly addNameRange     '3.3.6',
+836 silly addNameRange     '1.0.0-beta',
+836 silly addNameRange     '1.0.0-beta2',
+836 silly addNameRange     '1.0.0-rc',
+836 silly addNameRange     '1.0.0-rc2',
+836 silly addNameRange     '1.0.0-rc3',
+836 silly addNameRange     '1.0.0-rc4',
+836 silly addNameRange     '2.0.0-beta',
+836 silly addNameRange     '2.0.0-beta2',
+836 silly addNameRange     '2.0.0-beta3',
+836 silly addNameRange     '2.0.0-rc',
+836 silly addNameRange     '2.0.0-rc2',
+836 silly addNameRange     '2.0.0-rc3',
+836 silly addNameRange     '3.0.0-alpha1',
+836 silly addNameRange     '3.0.0-alpha2',
+836 silly addNameRange     '3.0.0-alpha3',
+836 silly addNameRange     '3.0.0-alpha4',
+836 silly addNameRange     '3.0.0-alpha5',
+836 silly addNameRange     '3.0.0-beta1',
+836 silly addNameRange     '3.0.0-beta2',
+836 silly addNameRange     '3.0.0-beta3',
+836 silly addNameRange     '3.0.0-beta4',
+836 silly addNameRange     '3.0.0-beta6',
+836 silly addNameRange     '3.0.0-beta7',
+836 silly addNameRange     '3.0.0-rc1',
+836 silly addNameRange     '3.0.0-rc2',
+836 silly addNameRange     '3.0.0-rc3',
+836 silly addNameRange     ... 163 more items ] ]
+837 silly addNamed express@4.17.1
+838 verbose addNamed "4.17.1" is a plain semver version for express
+839 verbose get http://chikchak.ddns.net:4873/typescript not expired, no request
+840 silly addNameRange number 2 { name: 'typescript', range: '>=3.2.2 <4.0.0', hasData: true }
+841 silly addNameRange versions [ 'typescript',
+841 silly addNameRange   [ '0.8.0',
+841 silly addNameRange     '0.8.1',
+841 silly addNameRange     '0.8.1-1',
+841 silly addNameRange     '0.8.2',
+841 silly addNameRange     '0.8.3',
+841 silly addNameRange     '0.9.0',
+841 silly addNameRange     '0.9.0-1',
+841 silly addNameRange     '0.9.1',
+841 silly addNameRange     '0.9.1-1',
+841 silly addNameRange     '0.9.5',
+841 silly addNameRange     '0.9.7',
+841 silly addNameRange     '1.0.0',
+841 silly addNameRange     '1.0.1',
+841 silly addNameRange     '1.1.0-1',
+841 silly addNameRange     '1.3.0',
+841 silly addNameRange     '1.4.1',
+841 silly addNameRange     '1.5.0-alpha',
+841 silly addNameRange     '1.5.0-beta',
+841 silly addNameRange     '1.5.3',
+841 silly addNameRange     '1.6.0-dev.20150722.1',
+841 silly addNameRange     '1.6.0-dev.20150723',
+841 silly addNameRange     '1.6.0-dev.20150724',
+841 silly addNameRange     '1.6.0-dev.20150725',
+841 silly addNameRange     '1.6.0-dev.20150726',
+841 silly addNameRange     '1.6.0-dev.20150727',
+841 silly addNameRange     '1.6.0-dev.20150728',
+841 silly addNameRange     '1.6.0-dev.20150729',
+841 silly addNameRange     '1.6.0-dev.20150730',
+841 silly addNameRange     '1.6.0-dev.20150731',
+841 silly addNameRange     '1.6.0-dev.20150801',
+841 silly addNameRange     '1.6.0-dev.20150802',
+841 silly addNameRange     '1.6.0-dev.20150803',
+841 silly addNameRange     '1.6.0-dev.20150804',
+841 silly addNameRange     '1.6.0-dev.20150805',
+841 silly addNameRange     '1.6.0-dev.20150806',
+841 silly addNameRange     '1.6.0-dev.20150807',
+841 silly addNameRange     '1.6.0-dev.20150808',
+841 silly addNameRange     '1.6.0-dev.20150809',
+841 silly addNameRange     '1.6.0-dev.20150810',
+841 silly addNameRange     '1.6.0-dev.20150811',
+841 silly addNameRange     '1.6.0-dev.20150812',
+841 silly addNameRange     '1.6.0-dev.20150813',
+841 silly addNameRange     '1.6.0-dev.20150814',
+841 silly addNameRange     '1.6.0-dev.20150815',
+841 silly addNameRange     '1.6.0-dev.20150816',
+841 silly addNameRange     '1.6.0-dev.20150817',
+841 silly addNameRange     '1.6.0-dev.20150818',
+841 silly addNameRange     '1.6.0-dev.20150819',
+841 silly addNameRange     '1.6.0-dev.20150820',
+841 silly addNameRange     '1.6.0-dev.20150821',
+841 silly addNameRange     '1.6.0-dev.20150822',
+841 silly addNameRange     '1.6.0-dev.20150823',
+841 silly addNameRange     '1.6.0-dev.20150824',
+841 silly addNameRange     '1.6.0-dev.20150825',
+841 silly addNameRange     '1.7.0-dev.20150826',
+841 silly addNameRange     '1.7.0-dev.20150827',
+841 silly addNameRange     '1.7.0-dev.20150828',
+841 silly addNameRange     '1.7.0-dev.20150829',
+841 silly addNameRange     '1.7.0-dev.20150830',
+841 silly addNameRange     '1.7.0-dev.20150831',
+841 silly addNameRange     '1.7.0-dev.20150901',
+841 silly addNameRange     '1.7.0-dev.20150902',
+841 silly addNameRange     '1.6.0-beta',
+841 silly addNameRange     '1.7.0-dev.20150903',
+841 silly addNameRange     '1.7.0-dev.20150904',
+841 silly addNameRange     '1.6.0-dev.20150905',
+841 silly addNameRange     '1.6.0-dev.20150906',
+841 silly addNameRange     '1.6.0-dev.20150907',
+841 silly addNameRange     '1.6.0-dev.20150908',
+841 silly addNameRange     '1.6.0-dev.20150909',
+841 silly addNameRange     '1.6.0-dev.20150910',
+841 silly addNameRange     '1.6.0-dev.20150911',
+841 silly addNameRange     '1.6.0-dev.20150912',
+841 silly addNameRange     '1.6.0-dev.20150913',
+841 silly addNameRange     '1.6.0-dev.20150914',
+841 silly addNameRange     '1.6.0-dev.20150915',
+841 silly addNameRange     '1.7.0-dev.20150916',
+841 silly addNameRange     '1.6.2',
+841 silly addNameRange     '1.7.0-dev.20150917',
+841 silly addNameRange     '1.7.0-dev.20150918',
+841 silly addNameRange     '1.7.0-dev.20150919',
+841 silly addNameRange     '1.7.0-dev.20150920',
+841 silly addNameRange     '1.7.0-dev.20150921',
+841 silly addNameRange     '1.7.0-dev.20150922',
+841 silly addNameRange     '1.7.0-dev.20150923',
+841 silly addNameRange     '1.7.0-dev.20150924',
+841 silly addNameRange     '1.7.0-dev.20150925',
+841 silly addNameRange     '1.7.0-dev.20150926',
+841 silly addNameRange     '1.7.0-dev.20150927',
+841 silly addNameRange     '1.7.0-dev.20150928',
+841 silly addNameRange     '1.7.0-dev.20150929',
+841 silly addNameRange     '1.7.0-dev.20150930',
+841 silly addNameRange     '1.7.0-dev.20151001',
+841 silly addNameRange     '1.7.0-dev.20151002',
+841 silly addNameRange     '1.7.0-dev.20151003',
+841 silly addNameRange     '1.7.0-dev.20151004',
+841 silly addNameRange     '1.7.0-dev.20151005',
+841 silly addNameRange     '1.7.0-dev.20151006',
+841 silly addNameRange     '1.7.0-dev.20151014',
+841 silly addNameRange     '1.7.0-dev.20151015',
+841 silly addNameRange     ... 1269 more items ] ]
+842 silly addNamed typescript@3.6.2
+843 verbose addNamed "3.6.2" is a plain semver version for typescript
+844 verbose get http://chikchak.ddns.net:4873/reflect-metadata not expired, no request
+845 silly addNameRange number 2 { name: 'reflect-metadata',
+845 silly addNameRange   range: '>=0.1.12 <0.2.0',
+845 silly addNameRange   hasData: true }
+846 silly addNameRange versions [ 'reflect-metadata',
+846 silly addNameRange   [ '0.0.2',
+846 silly addNameRange     '0.0.3',
+846 silly addNameRange     '0.1.0',
+846 silly addNameRange     '0.1.1',
+846 silly addNameRange     '0.1.2',
+846 silly addNameRange     '0.1.3',
+846 silly addNameRange     '0.1.4',
+846 silly addNameRange     '0.1.5',
+846 silly addNameRange     '0.1.6',
+846 silly addNameRange     '0.1.7',
+846 silly addNameRange     '0.1.8',
+846 silly addNameRange     '0.1.9',
+846 silly addNameRange     '0.1.10',
+846 silly addNameRange     '0.1.12',
+846 silly addNameRange     '0.1.13' ] ]
+847 silly addNamed reflect-metadata@0.1.13
+848 verbose addNamed "0.1.13" is a plain semver version for reflect-metadata
+849 silly cache afterAdd jsonwebtoken@8.5.1
+850 verbose afterAdd /home/dieppa/.npm/jsonwebtoken/8.5.1/package/package.json not in flight; writing
+851 silly cache afterAdd chk2global@0.0.3
+852 verbose afterAdd /home/dieppa/.npm/chk2global/0.0.3/package/package.json not in flight; writing
+853 silly cache afterAdd rimraf@2.7.1
+854 verbose afterAdd /home/dieppa/.npm/rimraf/2.7.1/package/package.json not in flight; writing
+855 silly cache afterAdd uuid@3.3.3
+856 verbose afterAdd /home/dieppa/.npm/uuid/3.3.3/package/package.json not in flight; writing
+857 silly cache afterAdd body-parser@1.19.0
+858 verbose afterAdd /home/dieppa/.npm/body-parser/1.19.0/package/package.json not in flight; writing
+859 silly cache afterAdd inversify@5.0.1
+860 verbose afterAdd /home/dieppa/.npm/inversify/5.0.1/package/package.json not in flight; writing
+861 silly cache afterAdd rxjs@6.5.3
+862 verbose afterAdd /home/dieppa/.npm/rxjs/6.5.3/package/package.json not in flight; writing
+863 silly cache afterAdd express@4.17.1
+864 verbose afterAdd /home/dieppa/.npm/express/4.17.1/package/package.json not in flight; writing
+865 silly cache afterAdd reflect-metadata@0.1.13
+866 verbose afterAdd /home/dieppa/.npm/reflect-metadata/0.1.13/package/package.json not in flight; writing
+867 silly cache afterAdd typescript@3.6.2
+868 verbose afterAdd /home/dieppa/.npm/typescript/3.6.2/package/package.json not in flight; writing
+869 verbose afterAdd /home/dieppa/.npm/jsonwebtoken/8.5.1/package/package.json written
+870 verbose afterAdd /home/dieppa/.npm/chk2global/0.0.3/package/package.json written
+871 verbose afterAdd /home/dieppa/.npm/rimraf/2.7.1/package/package.json written
+872 verbose afterAdd /home/dieppa/.npm/uuid/3.3.3/package/package.json written
+873 verbose afterAdd /home/dieppa/.npm/inversify/5.0.1/package/package.json written
+874 verbose afterAdd /home/dieppa/.npm/body-parser/1.19.0/package/package.json written
+875 verbose afterAdd /home/dieppa/.npm/rxjs/6.5.3/package/package.json written
+876 verbose afterAdd /home/dieppa/.npm/express/4.17.1/package/package.json written
+877 verbose afterAdd /home/dieppa/.npm/reflect-metadata/0.1.13/package/package.json written
+878 verbose afterAdd /home/dieppa/.npm/typescript/3.6.2/package/package.json written
+879 silly rollbackFailedOptional Starting
+880 silly rollbackFailedOptional Finishing
+881 silly runTopLevelLifecycles Starting
+882 silly runTopLevelLifecycles Finishing
+883 silly install printInstalled
+884 verbose stack Error: connect ECONNREFUSED 83.44.122.148:4873
+884 verbose stack     at Object._errnoException (util.js:1022:11)
+884 verbose stack     at _exceptionWithHostPort (util.js:1044:20)
+884 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+885 verbose cwd /home/dieppa/Development/user-manager
+886 error Linux 4.15.0-60-generic
+887 error argv "/usr/bin/node" "/usr/bin/npm" "install"
+888 error node v8.10.0
+889 error npm  v3.5.2
+890 error code ECONNREFUSED
+891 error errno ECONNREFUSED
+892 error syscall connect
+893 error Error: connect ECONNREFUSED 83.44.122.148:4873
+893 error     at Object._errnoException (util.js:1022:11)
+893 error     at _exceptionWithHostPort (util.js:1044:20)
+893 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+893 error  { Error: connect ECONNREFUSED 83.44.122.148:4873
+893 error     at Object._errnoException (util.js:1022:11)
+893 error     at _exceptionWithHostPort (util.js:1044:20)
+893 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+893 error   code: 'ECONNREFUSED',
+893 error   errno: 'ECONNREFUSED',
+893 error   syscall: 'connect',
+893 error   address: '83.44.122.148',
+893 error   port: 4873,
+893 error   parent: 'user-manager' }
+894 error If you are behind a proxy, please make sure that the
+894 error 'proxy' config is set properly.  See: 'npm help config'
+895 verbose exit [ 1, true ]

@@ -17,4 +17,12 @@ export class BusinessInjector  {
     public static readonly SESSION_DATASTORE = { value: Symbol.for('SessionDataStore')};
     public static readonly SESSION_PROVIDER = { value: Symbol.for('SessionProvider')};
     public static readonly SESSION_PERSISTER = { value: Symbol.for('SessionPersister')};
+    public static readonly LOGOUT_USER = { value: Symbol.for('LogoutUser') };
+    public static readonly MESSAGE_CLIENT = Symbol.for('MessageClient');
+    public static readonly TOKEN_BROADCASTER = Symbol.for('TokenBroadcaster');
+    public static readonly SESSION_NOTIFIER = Symbol.for('SessionNotifier');
+    public static readonly UUI_GENERATOR = Symbol.for('UuiGenerator');
+    public static readonly GET_USER_USE_CASE = Symbol.for('GetUserUseCase');
+    public static readonly EVENT_CONTROLLER = Symbol.for('EventController');
+    public static readonly USERS_EXIST = Symbol.for('UsersExist');
 }

@@ -4,13 +4,14 @@ import Tokener from '../security/Tokener';
 import Session from '../models/Session';
 import { Observable, from, of, Subscriber } from 'rxjs';
 import UserRepository from '../repositories/UserRepository';
-import Environment from '../environment/Environment';
+import Environment from '../env/Environment';
 import { flatMap, map, concat, catchError } from 'rxjs/operators';
 import Errors from '../constants/Errors';
 import { SessionHandlerUseCase } from './SessionHandlerUseCase';
 import Tokens from '../constants/Tokens';
 import { SessionRepository } from '../repositories/SessionRepository';
 import User from '../models/User';
+import SessionNotifier from '../comm/SessionNotifier';
 
 @injectable()
 export class RefreshToken extends SessionHandlerUseCase<RefreshTokenParams> {
@@ -19,6 +20,9 @@ export class RefreshToken extends SessionHandlerUseCase<RefreshTokenParams> {
 
     @inject(BusinessInjector.SESSION_REPOSITORY.value)
     private sessionRepository: SessionRepository;
+
+    @inject(BusinessInjector.SESSION_NOTIFIER)
+    private sessionNotifier: SessionNotifier;
 
     public buildUseCaseObservable(params: RefreshTokenParams): Observable<Session> {
         return this.validateToken(params.getRefreshToken())
@@ -30,12 +34,12 @@ export class RefreshToken extends SessionHandlerUseCase<RefreshTokenParams> {
             }))
             .pipe(flatMap(({ savedSessions, storedUser }) => {
                 const oldSession = this.getSessionFromToken(savedSessions, params.getRefreshToken());
-                return from(this.createSession(storedUser.id)).pipe(map(newSession => ({ newSession, oldSession })));
+                return from(this.createSession(storedUser.id, storedUser.name, storedUser.email)).pipe(map(newSession => ({ newSession, oldSession })));
             }))
             .pipe(flatMap(({ newSession, oldSession }) => {
                 return this.sessionRepository.removeSessionByToken(oldSession.token)
                 .pipe(concat(this.sessionRepository.saveSession(newSession)))
-                //TODO: Broadcast new token to other services
+                .pipe(concat(this.sessionNotifier.notifyRefresh(oldSession.token, newSession.token)))
                 .pipe(concat(of(newSession)));
             }));
     }

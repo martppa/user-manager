@@ -2,7 +2,6 @@ import { injectable, inject } from 'inversify';
 import { UseCase } from './UseCase';
 import { Observable, from } from 'rxjs';
 import { flatMap, map } from 'rxjs/operators';
-import User from '../models/User';
 import UserRepository from '../repositories/UserRepository';
 import { BusinessInjector } from '../di/BusinessInjector';
 import Errors from '../constants/Errors';
@@ -23,11 +22,11 @@ export class RegisterUser extends UseCase<RegisterUserParams, any> {
                 if (storedUser) {
                     throw new Error(Errors.USER_ALREADY_EXISTS);
                 }
-                return from(this.cypher.encrypt(params.password)).pipe(map(hash => ({ hash, params })));
+                return from(this.cypher.encrypt(params.password))
+                    .pipe(map(hash => ({ hash, params })));
             }))
-            .pipe(flatMap(({ hash, params }) => {
-                return this.userRepository.registerUser(params.username, params.email, hash);
-            }));
+            .pipe(flatMap(({ hash, params }) => this.userRepository
+                .registerUser(params.username, params.email, hash)));
     }
 }
 

@@ -7,12 +7,11 @@ import { BusinessInjector } from '../../business/di/BusinessInjector';
 import { RegisterUser } from '../../business/interactors/RegisterUser';
 import UserRepository from '../../business/repositories/UserRepository';
 import { UserRepositoryImpl } from '../../data/repositories/UserRepositoryImpl';
-import Logger from "chk2common/dist/logger/Logger";
+import Logger from "chk2global/dist/logger/Logger";
 import WinstonLogger from "chk2common/dist/logger/winston/WinstonLogger";
 import ServiceRegister from "chk2common/dist/registration/ServiceRegister";
 import Server from 'chk2common/dist/server/Server';
 import ConfigRequester from 'chk2common/dist/config/ConfigRequester';
-import CloudConfigRequester from 'chk2common/dist/config/cloudconfig/CloudConfigRequester';
 import ExpressServer from 'chk2common/dist/server/express/ExpressServer';
 import EurekaServiceRegister from 'chk2common/dist/registration/eureka/EurekaServiceRegister';
 import UserPersister from "../../data/datastore/database/persister/UserPersister";
@@ -39,9 +38,19 @@ import SessionDataStore from '../../data/datastore/SessionDataStore';
 import SessionDatabaseDataStore from '../../data/datastore/database/SessionDatabaseDataStore';
 import SessionMongoPersister from '../../data/datastore/database/persister/mongodb/session/SessionMongoPersister';
 import SessionPersister from "../../data/datastore/database/persister/SessionPersister";
+import { LogoutUser } from '../../business/interactors/LogoutUser';
+import SessionNotifier from '../../business/comm/SessionNotifier';
+import SessionNotifierImpl from '../../comm/SessionNotifierImpl';
+import UuidGenerator from '../../business/security/UuidGenerator';
+import UuiGeneratorImpl from "../../data/security/uuid/UuidGeneratorImpl";
+import NetworkController from "../../comm/controllers/NetworkController";
+import UsersExist from "../../business/interactors/UsersExist";
+import LocalConfigRequester from "../config/LocalConfigRequester";
+import { GetUser } from "../../business/interactors/GetUser";
+import EnvConfigRequester from "../config/EnvConfigRequester";
 
 export class Injector extends BusinessInjector {
-    private static readonly _container = new Container();   
+    private static readonly _container = new Container();
     
     public static readonly SERVICE_REGISTER = { value: Symbol.for('ServiceRegister')};
     public static readonly CONFIG_REQUESTER = { value: Symbol.for('ConfigRequester')};
@@ -49,10 +58,10 @@ export class Injector extends BusinessInjector {
     public static readonly SERVER = { value: Symbol.for('Server')};
 
     public static initialize() {
+        this.bindConfig();
         this._container.bind<Logger>(this.LOGGER.value).to(WinstonLogger).inSingletonScope();
         this._container.bind<ServiceRegister>(this.SERVICE_REGISTER.value).to(EurekaServiceRegister).inSingletonScope();
         this._container.bind<Server>(this.SERVER.value).to(ExpressServer).inSingletonScope();
-        this._container.bind<ConfigRequester>(this.CONFIG_REQUESTER.value).to(CloudConfigRequester).inSingletonScope();
         this._container.bind<DatabaseManager>(this.DATABASE_MANAGER.value).to(MongoManager).inSingletonScope();
         this._container.bind<Cypher>(this.CYPHER.value).to(BcryptCypher).inSingletonScope();
         this._container.bind<RegisterUser>(this.REGISTER_USER.value).to(RegisterUser).inSingletonScope();
@@ -70,9 +79,23 @@ export class Injector extends BusinessInjector {
         this._container.bind<SessionRepository>(this.SESSION_REPOSITORY.value).to(SessionRepositoryImpl).inSingletonScope();
         this._container.bind<SessionDataStore>(this.SESSION_DATASTORE.value).to(SessionDatabaseDataStore).inSingletonScope();
         this._container.bind<SessionPersister>(this.SESSION_PERSISTER.value).to(SessionMongoPersister).inSingletonScope();
+        this._container.bind<LogoutUser>(this.LOGOUT_USER.value).to(LogoutUser).inSingletonScope();
+        this._container.bind<SessionNotifier>(this.SESSION_NOTIFIER).to(SessionNotifierImpl).inSingletonScope();
+        this._container.bind<UuidGenerator>(this.UUI_GENERATOR).to(UuiGeneratorImpl).inSingletonScope();
+        this._container.bind<GetUser>(this.GET_USER_USE_CASE).to(GetUser).inSingletonScope();
+        this._container.bind<NetworkController>(this.EVENT_CONTROLLER).to(NetworkController).inSingletonScope();
+        this._container.bind<UsersExist>(this.USERS_EXIST).to(UsersExist).inSingletonScope();
     }
 
-    static get container() {
-        return this._container;
+    private static bindConfig(): void {
+        if (process.env.USING_DOCKER) {
+            this._container.bind<ConfigRequester>(this.CONFIG_REQUESTER.value).to(EnvConfigRequester).inSingletonScope();
+        } else {
+            this._container.bind<ConfigRequester>(this.CONFIG_REQUESTER.value).to(LocalConfigRequester).inSingletonScope();
+        }
+    }
+
+    public static get<T>(symbol: symbol): T {
+        return this._container.get<T>(symbol);
     }
 }

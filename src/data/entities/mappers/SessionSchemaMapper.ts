@@ -9,14 +9,6 @@ export default class SessionSchemaMapper {
         return sessions;
     }
 
-    /*public static mapToSchema(token: string, refreshToken: string, userId: string): Mongoose.Document {
-        const sessionSchema = new SessionSchema();
-        sessionSchema[SessionSchemaField.token] = token;
-        sessionSchema[SessionSchemaField.refreshToken] = refreshToken;
-        sessionSchema[SessionSchemaField.userId] = userId;
-        return sessionSchema;
-    }*/
-
     public static mapToSchema(sessionEntity: SessionEntity): Mongoose.Document {
         const sessionSchema = new SessionSchema();
         sessionSchema[SessionSchemaField.token] = sessionEntity.token;

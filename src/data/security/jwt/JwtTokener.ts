@@ -4,8 +4,8 @@ import { injectable } from 'inversify';
 
 @injectable()
 export default class JwtTokener implements Tokener {
-    public async createToken(payLoad: any, cert: string, option?: any): Promise<string> {
-        return JWT.sign(payLoad, cert, option);
+    public async createToken(payload: any, cert: string, option?: any): Promise<string> {
+        return JWT.sign(payload, cert, option);
     }
 
     public async verify(token: string, key: string): Promise<any> {
