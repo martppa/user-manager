@@ -19,9 +19,9 @@ export default class LoginController extends ParserController {
 
     public constructor() {
         super();
-        this.logger = Injector.get<Logger>(BusinessInjector.LOGGER.value);
-        this.validator = Injector.get<Validator>(BusinessInjector.VALIDATOR.value);
-        this.refreshToken = Injector.get<RefreshToken>(BusinessInjector.REFRESH_TOKEN.value);
+        this.logger = Injector.get(BusinessInjector.LOGGER.value);
+        this.validator = Injector.get(BusinessInjector.VALIDATOR.value);
+        this.refreshToken = Injector.get(BusinessInjector.REFRESH_TOKEN.value);
     }
     
     @Post('/refresh')
@@ -36,10 +36,10 @@ export default class LoginController extends ParserController {
             }
             const newSession = await this.refreshToken
                 .asPromise(RefreshTokenParams.forRefreshToken(refreshTokenValidationModel.refreshToken));
-            res.send(this.createSucessfulResponseString(newSession));            
+            res.send(this.createSucessfulResponseString(SessionModelMapper.map(newSession)));            
         } catch (error) {
             this.logger.error(this.TAG,`Error during token refresh: ${error.message}`);
-            res.status(this.extractErrorCode(error.message)).send(this.createErrorResponseString([error.INTERNAL_SERVER_ERROR]));
+            res.status(this.extractErrorCode(error.message)).send(this.createErrorResponseString([error.message]));
         }
 
         return res;

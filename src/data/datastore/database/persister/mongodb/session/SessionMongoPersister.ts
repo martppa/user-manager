@@ -20,6 +20,7 @@ export default class SessionMongoPersister implements SessionPersister {
             const sessionSchema = SessionSchemaMapper.mapToSchema(sessionEntity);
             try {
                 await sessionSchema.save();
+                subscriber.next(void 0);
                 subscriber.complete();                
             } catch (error) {
                 this.logger.error(this.TAG, `Error when saving session: ${error}`);
@@ -32,6 +33,7 @@ export default class SessionMongoPersister implements SessionPersister {
         return Observable.create(async (subscriber: Subscriber<any>) => {
             try {
                 await SessionSchema.deleteMany({ token: token });
+                subscriber.next(void 0);
                 subscriber.complete();
             } catch (error) {
                 this.logger.error(this.TAG, `Error when removing session by token from database: ${error}`);

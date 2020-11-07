@@ -23,6 +23,7 @@ export default class UserMongoPersister implements UserPersister {
             const userSchema = UserSchemaMapper.mapToSchema(userId, username, email, password);
             try {
                 await userSchema.save();
+                subscriber.next(void 0);
                 subscriber.complete();
             } catch (error) {
                 this.logger.error(this.TAG, `Error when saving user: ${error}`);

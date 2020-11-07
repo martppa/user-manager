@@ -18,9 +18,9 @@ export class RegisterController extends ParserController {
 
     public constructor() {
         super();
-        this.logger = Injector.get<Logger>(BusinessInjector.LOGGER.value);
-        this.validator = Injector.get<Validator>(BusinessInjector.VALIDATOR.value);
-        this.registerUser = Injector.get<RegisterUser>(BusinessInjector.REGISTER_USER.value);
+        this.logger = Injector.get(BusinessInjector.LOGGER.value);
+        this.validator = Injector.get(BusinessInjector.VALIDATOR.value);
+        this.registerUser = Injector.get(BusinessInjector.REGISTER_USER.value);
     }
 
     @Post('/signup')
@@ -40,7 +40,7 @@ export class RegisterController extends ParserController {
             res.send(this.createEmptySucessfulResponseString());
         } catch (error) {
             this.logger.error(this.TAG, `Error during user registration: ${error.message}`);
-            res.status(this.extractErrorCode(error.message)).send(this.createErrorResponseString([Errors.INTERNAL_SERVER_ERROR]));
+            res.status(this.extractErrorCode(error.message)).send(this.createErrorResponseString([error.message]));
         }
 
         return res;

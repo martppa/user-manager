@@ -37,9 +37,9 @@ export class RefreshToken extends SessionHandlerUseCase<RefreshTokenParams> {
             }))
             .pipe(flatMap(({ newSession, oldSession }) => {
                 return this.sessionRepository.removeSessionByToken(oldSession.token)
-                .pipe(concat(this.sessionRepository.saveSession(newSession)))
-                .pipe(concat(this.sessionNotifier.notifyRefresh(oldSession.token, newSession.token)))
-                .pipe(concat(of(newSession)));
+                    .pipe(concat(this.sessionRepository.saveSession(newSession)))
+                    .pipe(concat(this.sessionNotifier.notifyRefresh(oldSession.token, newSession.token)))
+                    .pipe(concat(of(newSession)));
             }));
     }
 

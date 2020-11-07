@@ -26,6 +26,7 @@ export default class SessionNotifierImpl implements SessionNotifier {
         return Observable.create(async (subscriber: Subscriber<any>) => {
             try {
                 // emit session to other services
+                subscriber.next(void 0);
                 subscriber.complete();
             } catch(error) {
                 subscriber.error(error);
@@ -37,6 +38,7 @@ export default class SessionNotifierImpl implements SessionNotifier {
         return Observable.create(async (subscriber: Subscriber<any>) => {
             try {
                 // notify session refresh
+                subscriber.next(void 0);
                 subscriber.complete();
             } catch(error) {
                 subscriber.error(error);
@@ -48,6 +50,7 @@ export default class SessionNotifierImpl implements SessionNotifier {
         return Observable.create(async (subscriber: Subscriber<any>) => {
             try {
                 // notify login
+                subscriber.next(void 0);
                 subscriber.complete();
             } catch(error) {
                 subscriber.error(error);

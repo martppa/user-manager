@@ -33,6 +33,7 @@ export default class ParserController {
         switch(errorMessage) {
             case ErrorCode.USER_DOESNT_EXIST:
             case ErrorCode.WRONG_PASSWORD:
+            case ErrorCode.INVALID_TOKEN:
                 return HttpStatus.FORBIDDEN;
 
             case ErrorCode.INVALID_PASSWORD:

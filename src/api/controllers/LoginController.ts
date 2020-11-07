@@ -8,6 +8,7 @@ import Errors from "../../business/constants/Errors";
 import ParserController from "../../common/controllers/ParserController";
 import Logger from "../../global/logger/Logger";
 import * as HttpStatus from 'http-status-codes';
+import SessionModelMapper from "../models/mappers/SessionModelMapper";
 
 @JsonController('/user')
 export default class LoginController extends ParserController {
@@ -35,10 +36,10 @@ export default class LoginController extends ParserController {
             }
             const params = LoginUserParams.forData(loginDataValidationModel.username, loginDataValidationModel.password);
             const session = await this.loginUser.asPromise(params);
-            res.send(this.createSucessfulResponseString(session));
+            res.send(this.createSucessfulResponseString(SessionModelMapper.map(session)));
         } catch (error) {
             this.logger.error(this.TAG, `Error during signin: ${error.message}`);
-            res.status(this.extractErrorCode(error.message)).send(this.createErrorResponseString([Errors.INTERNAL_SERVER_ERROR]));
+            res.status(this.extractErrorCode(error.message)).send(this.createErrorResponseString([error.message]));
         }
 
         return res;
