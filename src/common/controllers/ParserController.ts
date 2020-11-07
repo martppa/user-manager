@@ -36,6 +36,9 @@ export default class ParserController {
             case ErrorCode.INVALID_TOKEN:
                 return HttpStatus.FORBIDDEN;
 
+            case ErrorCode.USER_ALREADY_EXISTS:
+                return HttpStatus.CONFLICT;
+
             case ErrorCode.INVALID_PASSWORD:
             case ErrorCode.INVALID_USERNAME:
                 return HttpStatus.BAD_REQUEST;

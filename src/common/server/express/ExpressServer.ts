@@ -28,7 +28,7 @@ export default class ExpressServer implements Server, ServerWrapper {
 
     constructor() {
         this.express = this.createServer();
-        this.express.use(logger(BuildEnvironment.getBuildType()));
+        this.express.use(logger('combined'))
         this.express.use(bodyParser.json);
         this.express.use(bodyParser.urlencoded({ extended: true }));
         this.express.use(header);
