@@ -1,3 +1,3 @@
-import ErrorCode from 'chk2global/dist/constants/error/ErrorCode';
+import ErrorCode from "../../global/constants/error/ErrorCode";
 
 export default class Errors extends ErrorCode {}

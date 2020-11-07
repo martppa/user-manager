@@ -1,14 +1,13 @@
-
-import ConfigRequester from "chk2common/dist/config/ConfigRequester";
 import { injectable } from "inversify";
+import ConfigRequester from "../../common/config/ConfigRequester";
 
 @injectable()
 export default class LocalConfigRequester implements ConfigRequester {
     
     public requestConfig(): Promise<any> {
         return Promise.resolve({
-            mongodbUri: "mongodb://localhost:27017/user",
-            port: 2425
+            mongodbUri: "mongodb://localhost:27017/users",
+            port: 3000
         });
     }
 }

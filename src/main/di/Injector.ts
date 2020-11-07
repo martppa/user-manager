@@ -7,13 +7,6 @@ import { BusinessInjector } from '../../business/di/BusinessInjector';
 import { RegisterUser } from '../../business/interactors/RegisterUser';
 import UserRepository from '../../business/repositories/UserRepository';
 import { UserRepositoryImpl } from '../../data/repositories/UserRepositoryImpl';
-import Logger from "chk2global/dist/logger/Logger";
-import WinstonLogger from "chk2common/dist/logger/winston/WinstonLogger";
-import ServiceRegister from "chk2common/dist/registration/ServiceRegister";
-import Server from 'chk2common/dist/server/Server';
-import ConfigRequester from 'chk2common/dist/config/ConfigRequester';
-import ExpressServer from 'chk2common/dist/server/express/ExpressServer';
-import EurekaServiceRegister from 'chk2common/dist/registration/eureka/EurekaServiceRegister';
 import UserPersister from "../../data/datastore/database/persister/UserPersister";
 import UserDataStore from "../../data/datastore/UserDataStore";
 import UserMongoPersister from "../../data/datastore/database/persister/mongodb/user/UserMongoPersister";
@@ -39,15 +32,20 @@ import SessionDatabaseDataStore from '../../data/datastore/database/SessionDatab
 import SessionMongoPersister from '../../data/datastore/database/persister/mongodb/session/SessionMongoPersister';
 import SessionPersister from "../../data/datastore/database/persister/SessionPersister";
 import { LogoutUser } from '../../business/interactors/LogoutUser';
-import SessionNotifier from '../../business/comm/SessionNotifier';
-import SessionNotifierImpl from '../../comm/SessionNotifierImpl';
+import SessionNotifier from '../../business/com/SessionNotifier';
+import SessionNotifierImpl from '../../com/SessionNotifierImpl';
 import UuidGenerator from '../../business/security/UuidGenerator';
 import UuiGeneratorImpl from "../../data/security/uuid/UuidGeneratorImpl";
-import NetworkController from "../../comm/controllers/NetworkController";
+import NetworkController from "../../com/controllers/NetworkController";
 import UsersExist from "../../business/interactors/UsersExist";
 import LocalConfigRequester from "../config/LocalConfigRequester";
 import { GetUser } from "../../business/interactors/GetUser";
 import EnvConfigRequester from "../config/EnvConfigRequester";
+import Logger from "../../global/logger/Logger";
+import WinstonLogger from "../../common/logger/winston/WinstonLogger";
+import Server from "../../common/server/Server";
+import ExpressServer from "../../common/server/express/ExpressServer";
+import ConfigRequester from "../../common/config/ConfigRequester";
 
 export class Injector extends BusinessInjector {
     private static readonly _container = new Container();
@@ -60,7 +58,6 @@ export class Injector extends BusinessInjector {
     public static initialize() {
         this.bindConfig();
         this._container.bind<Logger>(this.LOGGER.value).to(WinstonLogger).inSingletonScope();
-        this._container.bind<ServiceRegister>(this.SERVICE_REGISTER.value).to(EurekaServiceRegister).inSingletonScope();
         this._container.bind<Server>(this.SERVER.value).to(ExpressServer).inSingletonScope();
         this._container.bind<DatabaseManager>(this.DATABASE_MANAGER.value).to(MongoManager).inSingletonScope();
         this._container.bind<Cypher>(this.CYPHER.value).to(BcryptCypher).inSingletonScope();

@@ -1,6 +1,5 @@
 import UserDataStore from '../UserDataStore';
 import { Observable } from 'rxjs';
-import UserEntity from '../../entities/UserEntity';
 import { injectable, inject } from 'inversify';
 import { BusinessInjector } from '../../../business/di/BusinessInjector';
 import UserPersister from './persister/UserPersister';

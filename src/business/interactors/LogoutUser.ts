@@ -3,7 +3,7 @@ import { inject } from 'inversify';
 import { BusinessInjector } from '../di/BusinessInjector';
 import { SessionRepository } from '../repositories/SessionRepository';
 import { Observable } from 'rxjs';
-import SessionNotifier from '../comm/SessionNotifier';
+import SessionNotifier from '../com/SessionNotifier';
 import { concat } from 'rxjs/operators';
 
 export class LogoutUser extends UseCase<LogoutUserParams, any> {

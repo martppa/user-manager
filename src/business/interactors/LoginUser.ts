@@ -8,7 +8,7 @@ import { flatMap, map, concat } from "rxjs/operators";
 import Errors from "../constants/Errors";
 import { SessionHandlerUseCase } from './SessionHandlerUseCase';
 import { SessionRepository } from '../repositories/SessionRepository';
-import SessionNotifier from '../comm/SessionNotifier';
+import SessionNotifier from '../com/SessionNotifier';
 
 @injectable()
 export class LoginUser extends SessionHandlerUseCase<LoginUserParams> {

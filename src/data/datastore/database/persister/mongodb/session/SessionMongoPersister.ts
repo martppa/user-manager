@@ -3,10 +3,10 @@ import { Observable, Subscriber } from 'rxjs';
 import Errors from '../../../../../../business/constants/Errors';
 import { BusinessInjector } from '../../../../../../business/di/BusinessInjector';
 import { inject, injectable } from 'inversify';
-import Logger from 'chk2global/dist/logger/Logger';
 import SessionSchemaMapper from '../../../../../entities/mappers/SessionSchemaMapper';
 import { SessionSchema, SessionSchemaField } from '../../../../../entities/SessionSchema';
 import SessionEntity from '../../../../../entities/SessionEntity';
+import Logger from '../../../../../../global/logger/Logger';
 
 @injectable()
 export default class SessionMongoPersister implements SessionPersister {

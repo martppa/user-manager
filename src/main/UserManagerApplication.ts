@@ -1,12 +1,11 @@
-import Application from 'chk2common/dist/Application';
 import { DatabaseManager } from './db/DatabaseManager';
 import { Injector } from './di/Injector';
-import Server from 'chk2common/dist/server/Server';
-import ConfigRequester from 'chk2common/dist/config/ConfigRequester';
-import Logger from 'chk2global/dist/logger/Logger';
-import ServiceRegister from 'chk2common/dist/registration/ServiceRegister';
-import SessionNotifier from '../business/comm/SessionNotifier';
-import NetworkController from '../comm/controllers/NetworkController';
+import SessionNotifier from '../business/com/SessionNotifier';
+import NetworkController from '../com/controllers/NetworkController';
+import Application from '../common/Application';
+import Logger from '../global/logger/Logger';
+import Server from '../common/server/Server';
+import ConfigRequester from '../common/config/ConfigRequester';
 
 export class UserManagerApplication extends Application {
     private databaseManager: DatabaseManager;
@@ -65,10 +64,6 @@ export class UserManagerApplication extends Application {
  
     protected getDatabaseManager(): DatabaseManager {
         return Injector.get<DatabaseManager>(Injector.DATABASE_MANAGER.value);
-    }
-
-    protected getServiceRegister(): ServiceRegister {
-        return Injector.get<ServiceRegister>(Injector.SERVICE_REGISTER.value);
     }
 
     protected getSessionNotifier(): SessionNotifier {

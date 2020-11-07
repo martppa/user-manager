@@ -4,9 +4,9 @@ import { Observable, Subscriber } from 'rxjs';
 import SessionEntity from "../../../../../entities/SessionEntity";
 import { SessionSchema } from '../../../../../entities/SessionSchema';
 import { BusinessInjector } from '../../../../../../business/di/BusinessInjector';
-import Logger from "chk2global/dist/logger/Logger";
 import Errors from "../../../../../../business/constants/Errors";
 import SessionSchemaMapper from '../../../../../entities/mappers/SessionSchemaMapper';
+import Logger from "../../../../../../global/logger/Logger";
 
 @injectable()
 export default class SessionMongoProvider implements SessionProvider {

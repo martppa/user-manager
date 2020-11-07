@@ -1,5 +1,5 @@
-import ConfigRequester from "chk2common/dist/config/ConfigRequester";
 import { injectable } from "inversify";
+import ConfigRequester from "../../common/config/ConfigRequester";
 
 @injectable()
 export default class EnvConfigRequester implements ConfigRequester {

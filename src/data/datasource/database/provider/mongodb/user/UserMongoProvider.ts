@@ -1,4 +1,3 @@
-import Logger from 'chk2global/dist/logger/Logger';
 import { Observable, Subscriber, of } from 'rxjs';
 import UserEntity from '../../../../../entities/UserEntity';
 import UserProvider from '../../UserProvider';
@@ -8,6 +7,7 @@ import { injectable, inject } from 'inversify';
 import * as Mongoose from 'mongoose';
 import { BusinessInjector } from '../../../../../../business/di/BusinessInjector';
 import Errors from '../../../../../../business/constants/Errors';
+import Logger from '../../../../../../global/logger/Logger';
 
 @injectable()
 export default class UserMongoProvider implements UserProvider {

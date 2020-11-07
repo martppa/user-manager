@@ -1,6 +1,5 @@
 import { injectable, inject } from 'inversify';
 import { BusinessInjector } from '../di/BusinessInjector';
-import Tokener from '../security/Tokener';
 import Session from '../models/Session';
 import { Observable, from, of, Subscriber } from 'rxjs';
 import UserRepository from '../repositories/UserRepository';
@@ -11,7 +10,7 @@ import { SessionHandlerUseCase } from './SessionHandlerUseCase';
 import Tokens from '../constants/Tokens';
 import { SessionRepository } from '../repositories/SessionRepository';
 import User from '../models/User';
-import SessionNotifier from '../comm/SessionNotifier';
+import SessionNotifier from '../com/SessionNotifier';
 
 @injectable()
 export class RefreshToken extends SessionHandlerUseCase<RefreshTokenParams> {

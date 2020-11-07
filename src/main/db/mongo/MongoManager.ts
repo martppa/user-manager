@@ -1,7 +1,7 @@
 import { DatabaseManager } from '../DatabaseManager';
 import * as Mongoose from 'mongoose';
 import { injectable } from 'inversify';
-import Logger from 'chk2global/dist/logger/Logger';
+import Logger from '../../../global/logger/Logger';
 
 @injectable()
 export class MongoManager implements DatabaseManager {

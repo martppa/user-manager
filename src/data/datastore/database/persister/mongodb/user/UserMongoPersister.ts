@@ -4,8 +4,8 @@ import UserSchemaMapper from '../../../../../entities/mappers/UserSchemaMapper';
 import { injectable, inject } from 'inversify';
 import Errors from '../../../../../../business/constants/Errors';
 import { BusinessInjector } from '../../../../../../business/di/BusinessInjector';
-import Logger from 'chk2global/dist/logger/Logger';
 import UuidGenerator from '../../../../../../business/security/UuidGenerator';
+import Logger from '../../../../../../global/logger/Logger';
 
 @injectable()
 export default class UserMongoPersister implements UserPersister {
